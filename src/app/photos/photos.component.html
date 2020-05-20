@@ -9,15 +9,24 @@
         <mat-card-title>{{item.title}}</mat-card-title>
         <mat-card-subtitle>{{item.subtitle}}</mat-card-subtitle>
       </mat-card-header>
-        <img mat-card-image [src]="item.image" [alt]="item.imageAlt">
-      <mat-card-content>
+      <img mat-card-image [src]="item.image" [alt]="item.imageAlt">
+      <!-- <mat-card-content>
         <p>
-          <!-- {{item.description}} -->
+          {{item.description}}
         </p>
-      </mat-card-content>
-      <mat-card-actions>
-        <a [href]="item.link" target="_blank"  mat-raised-button color="primary">Link</a>
+      </mat-card-content> -->
+      <mat-card-actions style="text-align: center;">
+        <a [href]="item.link" target="_blank" mat-raised-button color="primary">Link</a>
       </mat-card-actions>
     </mat-card>
+
+  </div>
+
+
+
+  <div style="text-align: center;margin-top: 20px;">
+    <a style="margin:20px;" *ngFor="let item of socialMedias" [href]="item.link" target="_blank">
+      <img [src]="item.image" alt="item.name">
+    </a>
   </div>
 </div>
