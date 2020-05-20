@@ -11,12 +11,14 @@ import {MatGridListModule} from '@angular/material/grid-list';
 import {MatDividerModule} from '@angular/material/divider';
 import {MatListModule} from '@angular/material/list';
 import {MatExpansionModule} from '@angular/material/expansion';
+import { NameComponent } from './name/name.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ResumeComponent,
-    PhotosComponent
+    PhotosComponent,
+    NameComponent
   ],
   imports: [
     BrowserModule,

@@ -2,14 +2,18 @@
     display: flex
     justify-content: space-between
     background-color: #343434
+    height: 100vh
+
 
 .column
+    min-width: 700px
     display: flex
     flex-direction: column
     justify-content: center
     width: 100%
 
 .resume
+    margin: 50px
     display: flex
     align-self: center
     width: 70%
@@ -17,3 +21,16 @@
 
 .subtitle-list
     padding-top: 8px
+
+.image 
+    height: 100vh
+
+@media (max-width: 1172px)
+    .content
+        flex-direction: column
+    .resume
+        width: 90%
+    .column
+        min-width: 300px
+    .image
+        display: none
