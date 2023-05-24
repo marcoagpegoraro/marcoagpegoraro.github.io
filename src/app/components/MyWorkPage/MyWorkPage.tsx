@@ -8,26 +8,19 @@ export const MyWorkPage = () => {
 
   const { width, height } = useWindowDimensions();
 
+  const resizeMonitorScreen = () => width < 1034 ? width / 3.2 - 390 : -67.58
+
   return <>
     <div className='my-work-page'>
-      <div className='monitor' style={{ backgroundImage: `url('/imac-pro-notes.png')` }}>
+      <div className='monitor' style={{ backgroundImage: `url('/imac.png')` }}>
+        <div className='monitor-screen' style={{ bottom: resizeMonitorScreen(), backgroundImage: `url('/notes-sem-nada.png')`   }}>
 
-        <div className='monitor-screen' style={{ bottom: width < 1034 ? width / 2.65555 - 410 : -22 }}></div>
+          <div className='app-name'>Meus trabalhos</div>
+          <div className='all-notes'></div>
+          <div className='tasks'></div>
+          <div className='text'></div>
+        </div>
 
-        {/* <Typography fontSize={'larger'} color={'white'}>
-        Sobre meu trabalho
-      </Typography>
-      <div className='spacer' />
-
-
-        <Typography fontFamily={'noteworthy'} fontSize={'larger'} >
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores dignissimos autem temporibus libero obcaecati illum consequuntur porro, atque architecto. Veniam libero cum eius quis ea dolores ratione tenetur beatae.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores dignissimos autem temporibus libero obcaecati illum consequuntur porro, atque architecto. Veniam libero cum eius quis ea dolores ratione tenetur beatae.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores dignissimos autem temporibus libero obcaecati illum consequuntur porro, atque architecto. Veniam libero cum eius quis ea dolores ratione tenetur beatae.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores dignissimos autem temporibus libero obcaecati illum consequuntur porro, atque architecto. Veniam libero cum eius quis ea dolores ratione tenetur beatae.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores dignissimos autem temporibus libero obcaecati illum consequuntur porro, atque architecto. Veniam libero cum eius quis ea dolores ratione tenetur beatae.
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore maiores dignissimos autem temporibus libero obcaecati illum consequuntur porro, atque architecto. Veniam libero cum eius quis ea dolores ratione tenetur beatae.
-        </Typography> */}
       </div>
     </div>
   </>
