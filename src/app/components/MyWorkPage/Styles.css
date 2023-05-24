@@ -1,0 +1,34 @@
+.my-work-page {
+     display: flex;
+    /* align-items: center; */
+    justify-content: center;
+    /* flex-wrap: wrap;  */
+    height: calc(100vh);
+}
+
+.monitor {
+    flex:1;
+    height: calc(100vh);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center; 
+    max-width: 1034px;
+}
+.monitor-screen{
+    background-color: pink;
+    width: 80%;
+    height: 0;
+    padding-bottom: 50%;
+    
+    left: 10%;
+    position: relative;
+}
+
+.company-logo {
+    max-width: 200px;
+}
+
+.spacer {
+    flex-basis: 100%;
+    height: 0;
+}

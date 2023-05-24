@@ -9,6 +9,7 @@
     "@fontsource/roboto": "5.0.0",
     "@mui/icons-material": "5.11.16",
     "@mui/material": "5.13.1",
+    "@smakss/react-scroll-direction": "^2.1.1",
     "@testing-library/jest-dom": "5.16.5",
     "@testing-library/react": "13.4.0",
     "@testing-library/user-event": "13.5.0",
@@ -21,8 +22,8 @@
     "web-vitals": "2.1.4"
   },
   "scripts": {
-   "predeploy": "npm run build",
-   "deploy": "gh-pages -d build -b master",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build -b master",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
