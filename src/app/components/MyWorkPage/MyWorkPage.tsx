@@ -8,6 +8,7 @@ import { Carousel } from 'react-responsive-carousel';
 import CloseIcon from '@mui/icons-material/Close';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
+import { FlexFillRow } from '../FlexHelpers/FlexHelpers';
 
 export const MyWorkPage = () => {
 
@@ -23,7 +24,7 @@ export const MyWorkPage = () => {
         <div className='slide'>
           <div className='titlebar'>
             <Typography marginLeft={1} color={'white'} fontSize={15} fontFamily={'MS Sans Serif'}>Sobre mim</Typography>
-            <div style={{flex: 1}}></div>
+            <FlexFillRow/>
             <Box width={16} height={16} style={{backgroundColor: '#C2C6CA', marginRight: 2, marginTop: 1}}><HorizontalRuleIcon style={{'fontSize': '1rem', marginTop: 5}}/></Box>
             <Box width={16} height={16} style={{backgroundColor: '#C2C6CA', marginRight: 2, marginTop: 1}}><CheckBoxOutlineBlankIcon style={{'fontSize': '1rem'}}/></Box>
             <Box width={16} height={16} style={{backgroundColor: '#C64830', marginRight: 1, marginTop: 1}}><CloseIcon style={{'fontSize': '1rem'}}/></Box>

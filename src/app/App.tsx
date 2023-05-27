@@ -11,11 +11,15 @@ import { ProjectsPage } from './components/ProjectsPage/ProjectsPage';
 function App() {
 
   return (
-    <div className="App" style={{backgroundImage: 'url("./background image.avif")'}}>
+    <div
+      className="App"
+      style={{
+        backgroundColor: '#F2F2F2'
+      }}>
       <NavBar></NavBar>
       <PresentationPage></PresentationPage>
-      <ResumePage/>
-      <ProjectsPage/>
+      <ResumePage />
+      <ProjectsPage />
     </div>
   );
 }

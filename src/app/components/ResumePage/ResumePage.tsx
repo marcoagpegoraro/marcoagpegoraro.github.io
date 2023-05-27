@@ -16,6 +16,7 @@ import { resumeItemList } from './ResumeItems';
 import type { FireworksHandlers } from '@fireworks-js/react'
 import { Fireworks } from '@fireworks-js/react'
 import Timeout from 'await-timeout';
+import { FlexBreakLine, FlexFillRow } from '../FlexHelpers/FlexHelpers';
 
 export const ResumePage = () => {
   const fireworksRef = useRef<FireworksHandlers>(null)
@@ -51,13 +52,12 @@ export const ResumePage = () => {
         <div className='window'>
           <div className='titlebar'>
             <Typography marginLeft={1} color={'white'} fontSize={26} fontFamily={'MS Sans Serif'}>Sobre mim</Typography>
-            <div style={{ flex: 1 }}></div>
+            <FlexFillRow/>
             <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10 }} /></Box>
             <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
             <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
           </div>
-          <div style={{ flexBasis: '100%', height: 0 }}></div>
-
+          <FlexBreakLine/>
           <Box sx={{ width: '100%', maxWidth: 260, bgcolor: 'background.paper', height: '85vh' }}>
             <nav aria-label="lista de experiencias profissionais">
               <List

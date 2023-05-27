@@ -1,6 +1,7 @@
 
 import React from 'react';
 import { Avatar, Typography } from '@mui/material';
+import { FlexBreakLine } from '../FlexHelpers/FlexHelpers';
 
 export const PresentationPage = () => {
   return <>
@@ -16,10 +17,7 @@ export const PresentationPage = () => {
         src="./eu.jpg"
         sx={{ width: 300, height: 300 }}
       />
-      <div style={{
-        flexBasis: '100%',
-        height: 0
-      }}></div>
+      <FlexBreakLine/>
       <Typography fontSize={'50px'}>
         💻🎵🚗🎮⌚💾🎹🎸🐈‍⬛🇧🇷🇮🇹
       </Typography>

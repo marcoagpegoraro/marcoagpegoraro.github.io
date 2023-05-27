@@ -9,7 +9,7 @@ export const projects: Project[] = [
     link: "https://www.youtube.com/watch?v=0kKge3K0ZwI",
   },
   {
-    name: "Artigo sobre Dart Aqueduct",
+    name: "Artigo sobre Framework Web em Dart Aqueduct",
     date: "Oct 26, 2019",
     description: "Básico, conexão com banco e autenticação JWT",
     imageUrl: "./projects-page/aqueduct.png",
@@ -44,7 +44,7 @@ export const projects: Project[] = [
     link: "https://www.linkedin.com/posts/murilohenriquegomes_hacking-kalilinux-activity-6595643833621467136-Xtak/",
   },
   {
-    name: "Fundamentos Web Frontend",
+    name: "Udacity - Fundamentos Web Frontend",
     date: "25/11/2018",
     description: "Udacity Nanodegree Program Graduate",
     imageUrl: "./projects-page/udacity.png",

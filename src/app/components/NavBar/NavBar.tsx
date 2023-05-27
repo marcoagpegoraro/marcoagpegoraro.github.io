@@ -26,8 +26,15 @@ export const NavBar = () => {
           <IconButton href="https://www.linkedin.com/in/marco-antonio-goncalves/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#0e76a8' }}>
             <LinkedInIcon></LinkedInIcon>
           </IconButton>
-          <IconButton href="https://www.instagram.com/marcoantonio.png/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2 }} style={{ color: '#DD2A7B' }}>
+          <IconButton href="https://www.instagram.com/marcoantonio.png/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
             <InstagramIcon></InstagramIcon>
+          </IconButton>
+          <IconButton href="https://medium.com/@tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2 }} style={{ color: '#DD2A7B' }}>
+            <img style={{
+              width: 20,
+              height: 20,
+              padding: 2,
+            }} src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png'></img>
           </IconButton>
         </Toolbar>
       </AppBar>
