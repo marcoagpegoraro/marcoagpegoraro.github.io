@@ -13,7 +13,6 @@ export default interface ResumeItem {
     name: string
     icon: any
     aboutText: string
-    isSelected: boolean
     type: ResumeItemType
     selectedIndex: number
 }

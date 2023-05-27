@@ -35,12 +35,14 @@ export const ResumePage = () => {
       <div className='monitor'>
         <div className='window'>
           <div className='titlebar'>
-            <Typography marginLeft={1} color={'white'} fontSize={20} fontFamily={'MS Sans Serif'}>Sobre mim</Typography>
+            <Typography marginLeft={1} color={'white'} fontSize={26} fontFamily={'MS Sans Serif'}>Sobre mim</Typography>
             <div style={{ flex: 1 }}></div>
             <Box width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4 }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10 }} /></Box>
             <Box width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4 }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
             <Box width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4 }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
           </div>
+          <div style={{ flexBasis: '100%', height: 0 }}></div>
+          
           <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
             <nav aria-label="lista de experiencias profissionais">
               <List
@@ -87,9 +89,15 @@ export const ResumePage = () => {
                     </ListItemButton>
                   </ListItem>
                 </>)}
-
               </List>
             </nav>
+          </Box>
+          <Box sx={{ width: 'calc(100% - 360px)', bgcolor: 'background.paper', backgroundImage: 'url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000")' }}>
+            {resumeItemList.filter(resumeItem => resumeItem.selectedIndex == selectedIndex).map(resumeItem => <>
+            <Typography key={resumeItem.selectedIndex}>
+              {resumeItem.aboutText}
+            </Typography>
+            </>)}
           </Box>
         </div>
       </div>

@@ -27,4 +27,7 @@
     width: 90%;
     border: #C0C0C0;
     border-style: solid;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
