@@ -6,6 +6,7 @@ import { PresentationPage } from './components/PresentationPage/PresentationPage
 import { MyWorkPage } from './components/MyWorkPage/MyWorkPage';
 import FloatingScrollPageButton from './components/FloatingScrollPageButton/FloatingScrollPageButton';
 import { ResumePage } from './components/ResumePage/ResumePage';
+import { ProjectsPage } from './components/ProjectsPage/ProjectsPage';
 
 function App() {
 
@@ -14,6 +15,7 @@ function App() {
       <NavBar></NavBar>
       <PresentationPage></PresentationPage>
       <ResumePage/>
+      <ProjectsPage/>
     </div>
   );
 }

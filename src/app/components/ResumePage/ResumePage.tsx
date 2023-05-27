@@ -22,15 +22,19 @@ export const ResumePage = () => {
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [displayFireworksEasterEgg, setDisplayFireworksEasterEgg] = useState('none');
-  
 
-  const toggleFireworksEasterEgg = async () => {
+
+  const activeFireworksEasterEgg = async () => {
     if (!fireworksRef.current) return
 
     fireworksRef.current.start()
     setDisplayFireworksEasterEgg('block')
     await Timeout.set(5000);
-    fireworksRef.current.stop()
+    disableFireworksEasterEgg()
+  }
+
+  const disableFireworksEasterEgg = async () => {
+    fireworksRef?.current?.stop()
     setDisplayFireworksEasterEgg('none')
   }
 
@@ -48,13 +52,13 @@ export const ResumePage = () => {
           <div className='titlebar'>
             <Typography marginLeft={1} color={'white'} fontSize={26} fontFamily={'MS Sans Serif'}>Sobre mim</Typography>
             <div style={{ flex: 1 }}></div>
-            <Box onClick={() => toggleFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10 }} /></Box>
-            <Box onClick={() => toggleFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
-            <Box onClick={() => toggleFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
+            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10 }} /></Box>
+            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
+            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
           </div>
           <div style={{ flexBasis: '100%', height: 0 }}></div>
-          
-          <Box sx={{ width: '100%', maxWidth: 260, bgcolor: 'background.paper', height: '89vh' }}>
+
+          <Box sx={{ width: '100%', maxWidth: 260, bgcolor: 'background.paper', height: '85vh' }}>
             <nav aria-label="lista de experiencias profissionais">
               <List
                 subheader={
@@ -63,7 +67,7 @@ export const ResumePage = () => {
                   </ListSubheader>
                 }>
 
-                {resumeItemList.filter(resumeItem => resumeItem.type == ResumeItemType.WORK).map(resumeItem => <>
+                {resumeItemList.filter(resumeItem => resumeItem.type == ResumeItemType.WORK).map(resumeItem =>
                   <ListItem disablePadding key={resumeItem.selectedIndex}>
                     <ListItemButton
 
@@ -75,7 +79,7 @@ export const ResumePage = () => {
                       <ListItemText primary={resumeItem.name} />
                     </ListItemButton>
                   </ListItem>
-                </>)}
+                )}
               </List>
             </nav>
             <Divider />
@@ -88,7 +92,7 @@ export const ResumePage = () => {
                 }
               >
 
-                {resumeItemList.filter(resumeItem => resumeItem.type == ResumeItemType.STUDY).map(resumeItem => <>
+                {resumeItemList.filter(resumeItem => resumeItem.type == ResumeItemType.STUDY).map(resumeItem =>
                   <ListItem disablePadding key={resumeItem.selectedIndex}>
                     <ListItemButton
                       selected={selectedIndex === resumeItem.selectedIndex}
@@ -99,32 +103,33 @@ export const ResumePage = () => {
                       <ListItemText primary={resumeItem.name} />
                     </ListItemButton>
                   </ListItem>
-                </>)}
+                )}
               </List>
             </nav>
           </Box>
           <Box sx={{ width: 'calc(100% - 260px)', bgcolor: 'background.paper', backgroundImage: 'url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000")' }}>
-            {resumeItemList.filter(resumeItem => resumeItem.selectedIndex == selectedIndex).map(resumeItem => <>
-            <Typography key={resumeItem.selectedIndex}>
-              {resumeItem.aboutText}
-            </Typography>
-            </>)}
+            {resumeItemList.filter(resumeItem => resumeItem.selectedIndex == selectedIndex).map(resumeItem =>
+              <Typography key={resumeItem.selectedIndex}>
+                {resumeItem.aboutText}
+              </Typography>
+            )}
           </Box>
         </div>
       </div>
     </div>
     <Fireworks
-        ref={fireworksRef}
-        options={{ opacity: 0.5 }}
-        style={{
-          zIndex: 999,
-          top: 0,
-          left: 0,
-          width: '100%',
-          height: '100%',
-          position: 'fixed',
-          display: displayFireworksEasterEgg
-        }}
-      />
+      ref={fireworksRef}
+      options={{ opacity: 0.5 }}
+      onClick={() => disableFireworksEasterEgg()}
+      style={{
+        zIndex: 999,
+        top: 0,
+        left: 0,
+        width: '100%',
+        height: '100%',
+        position: 'fixed',
+        display: displayFireworksEasterEgg
+      }}
+    />
   </>
 }
