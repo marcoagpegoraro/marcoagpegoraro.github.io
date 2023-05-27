@@ -1,0 +1,30 @@
+.resume-page {
+    display: flex;
+    justify-content: center;
+    height: calc(100vh);
+}
+
+.monitor {
+    flex: 1;
+    height: calc(100vh);
+    background-size: 90%;
+    background-repeat: no-repeat;
+    background-position: center;
+    max-width: 1034px;
+}
+
+.titlebar {
+    width: 100%; 
+    height: 38px; 
+    display: flex;
+    background-image: linear-gradient(to right, #000180, #1084d0);
+    flex-direction: row;
+}
+
+.window{
+    margin: 0 auto;
+    margin-top: 2%;
+    width: 90%;
+    border: #C0C0C0;
+    border-style: solid;
+}

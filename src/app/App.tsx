@@ -5,14 +5,15 @@ import { AppBar, Box, Button, Card, CardContent, CardMedia, IconButton, Toolbar,
 import { PresentationPage } from './components/PresentationPage/PresentationPage';
 import { MyWorkPage } from './components/MyWorkPage/MyWorkPage';
 import FloatingScrollPageButton from './components/FloatingScrollPageButton/FloatingScrollPageButton';
+import { ResumePage } from './components/ResumePage/ResumePage';
 
 function App() {
 
   return (
-    <div className="App">
+    <div className="App" style={{backgroundImage: 'url("./background image.avif")'}}>
       <NavBar></NavBar>
       <PresentationPage></PresentationPage>
-      <MyWorkPage></MyWorkPage>
+      <ResumePage/>
     </div>
   );
 }
