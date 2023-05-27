@@ -39,7 +39,6 @@ export const ResumePage = () => {
     index: number,
   ) => {
     setSelectedIndex(index);
-    console.log(selectedIndex)
   }
 
   return <>
@@ -55,7 +54,7 @@ export const ResumePage = () => {
           </div>
           <div style={{ flexBasis: '100%', height: 0 }}></div>
           
-          <Box sx={{ width: '100%', maxWidth: 260, bgcolor: 'background.paper' }}>
+          <Box sx={{ width: '100%', maxWidth: 260, bgcolor: 'background.paper', height: '89vh' }}>
             <nav aria-label="lista de experiencias profissionais">
               <List
                 subheader={
@@ -118,6 +117,7 @@ export const ResumePage = () => {
         ref={fireworksRef}
         options={{ opacity: 0.5 }}
         style={{
+          zIndex: 999,
           top: 0,
           left: 0,
           width: '100%',
