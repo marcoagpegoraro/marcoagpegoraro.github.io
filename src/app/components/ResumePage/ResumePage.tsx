@@ -43,7 +43,7 @@ export const ResumePage = () => {
           </div>
           <div style={{ flexBasis: '100%', height: 0 }}></div>
           
-          <Box sx={{ width: '100%', maxWidth: 360, bgcolor: 'background.paper' }}>
+          <Box sx={{ width: '100%', maxWidth: 260, bgcolor: 'background.paper' }}>
             <nav aria-label="lista de experiencias profissionais">
               <List
                 subheader={
@@ -92,7 +92,7 @@ export const ResumePage = () => {
               </List>
             </nav>
           </Box>
-          <Box sx={{ width: 'calc(100% - 360px)', bgcolor: 'background.paper', backgroundImage: 'url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000")' }}>
+          <Box sx={{ width: 'calc(100% - 260px)', bgcolor: 'background.paper', backgroundImage: 'url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000")' }}>
             {resumeItemList.filter(resumeItem => resumeItem.selectedIndex == selectedIndex).map(resumeItem => <>
             <Typography key={resumeItem.selectedIndex}>
               {resumeItem.aboutText}
