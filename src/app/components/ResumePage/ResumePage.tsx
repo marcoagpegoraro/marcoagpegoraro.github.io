@@ -1,8 +1,7 @@
 
-import React, { useEffect, useState } from 'react';
-import { Avatar, Box, Card, ListSubheader, Paper, Typography } from '@mui/material';
+import React, { useEffect, useRef, useState } from 'react';
+import { Box, ListSubheader, Typography } from '@mui/material';
 import './Styles.css'
-import useWindowDimensions from '../../hooks/useWindowDimensions';
 import CloseIcon from '@mui/icons-material/Close';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
@@ -12,15 +11,28 @@ import ListItemButton from '@mui/material/ListItemButton';
 import ListItemIcon from '@mui/material/ListItemIcon';
 import ListItemText from '@mui/material/ListItemText';
 import Divider from '@mui/material/Divider';
-import InboxIcon from '@mui/icons-material/Inbox';
-import DraftsIcon from '@mui/icons-material/Drafts';
-import { AccountBalance, Computer, Money, School, SchoolOutlined, StorefrontOutlined, TipsAndUpdates } from '@mui/icons-material';
 import ResumeItem, { ResumeItemType } from './types/Resume';
 import { resumeItemList } from './ResumeItems';
+import type { FireworksHandlers } from '@fireworks-js/react'
+import { Fireworks } from '@fireworks-js/react'
+import Timeout from 'await-timeout';
 
 export const ResumePage = () => {
-  const [selectedIndex, setSelectedIndex] = useState(0);
+  const fireworksRef = useRef<FireworksHandlers>(null)
 
+  const [selectedIndex, setSelectedIndex] = useState(0);
+  const [displayFireworksEasterEgg, setDisplayFireworksEasterEgg] = useState('none');
+  
+
+  const toggleFireworksEasterEgg = async () => {
+    if (!fireworksRef.current) return
+
+    fireworksRef.current.start()
+    setDisplayFireworksEasterEgg('block')
+    await Timeout.set(5000);
+    fireworksRef.current.stop()
+    setDisplayFireworksEasterEgg('none')
+  }
 
   const handleListItemClick = (
     event: React.MouseEvent<HTMLDivElement, MouseEvent>,
@@ -37,9 +49,9 @@ export const ResumePage = () => {
           <div className='titlebar'>
             <Typography marginLeft={1} color={'white'} fontSize={26} fontFamily={'MS Sans Serif'}>Sobre mim</Typography>
             <div style={{ flex: 1 }}></div>
-            <Box width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4 }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10 }} /></Box>
-            <Box width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4 }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
-            <Box width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4 }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
+            <Box onClick={() => toggleFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10 }} /></Box>
+            <Box onClick={() => toggleFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
+            <Box onClick={() => toggleFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
           </div>
           <div style={{ flexBasis: '100%', height: 0 }}></div>
           
@@ -102,5 +114,17 @@ export const ResumePage = () => {
         </div>
       </div>
     </div>
+    <Fireworks
+        ref={fireworksRef}
+        options={{ opacity: 0.5 }}
+        style={{
+          top: 0,
+          left: 0,
+          width: '100%',
+          height: '100%',
+          position: 'fixed',
+          display: displayFireworksEasterEgg
+        }}
+      />
   </>
 }
