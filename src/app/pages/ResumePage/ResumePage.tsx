@@ -52,7 +52,7 @@ export const ResumePage = () => {
       <div className='monitor'>
         <div className='window'>
           <div className='titlebar'>
-            <Typography marginLeft={1} color={'white'} fontSize={26} fontFamily={'MS Sans Serif'}>
+            <Typography marginLeft={1} color={'white'} fontSize={26}>
               <Translator path='resume.aboutMe'></Translator>
             </Typography>
             <FlexFillRow />
@@ -112,11 +112,14 @@ export const ResumePage = () => {
           </Box>
           <Box sx={{ width: 'calc(100% - 260px)', bgcolor: 'background.paper', backgroundImage: 'url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000")' }}>
             {resumeItemList.filter(resumeItem => resumeItem.selectedIndex == selectedIndex).map(resumeItem =>
-              <section key={resumeItem.selectedIndex}>
-                <img src={resumeItem.imageUrl} style={{maxWidth: '20%'}}></img>
-                <Typography>
-                  {resumeItem.aboutText}
-                </Typography>
+              <section key={resumeItem.selectedIndex} style={{ margin: '10%' }}>
+                <img src={resumeItem.imageUrl} style={{ maxWidth: '20%' }}></img>
+                <br /><br />
+                {resumeItem.chips?.map(chip => chip)}
+                <br /><br />
+                {resumeItem.date}
+                <br /><br />
+                {resumeItem.aboutText}
               </section>
             )}
           </Box>
