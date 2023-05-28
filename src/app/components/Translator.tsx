@@ -1,13 +1,28 @@
 import React from 'react'
 import { useTranslation } from 'react-i18next'
 
-interface params{
+interface params {
   path: string
+  stringReplaces?: StringReplace[] | undefined
 }
 
-const Translator = ({ path }: params) => {
+interface StringReplace {
+  stringToReplace: string
+  replaceTo: string
+}
+
+const Translator = ({ path, stringReplaces }: params) => {
   const { t } = useTranslation()
-  return <>{t(path)}</>
+  let translatedText = t(path)
+
+  if (stringReplaces) {
+    for (const stringReplace of stringReplaces) {
+      translatedText = translatedText.replace(stringReplace.stringToReplace, stringReplace.replaceTo)
+    }
+  }
+
+
+  return <>{translatedText}</>
 }
 
 export default Translator
