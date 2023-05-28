@@ -3,8 +3,8 @@ import React, { useEffect, useState } from 'react';
 import { Avatar, Box, Button, Card, CardActionArea, CardContent, CardMedia, Paper, Typography } from '@mui/material';
 import './Styles.css'
 import { projects } from './Projects';
-import { FlexBreakLine } from '../FlexHelpers/FlexHelpers';
-import Translator from '../Translator';
+import { FlexBreakLine } from '../../components/FlexHelpers';
+import Translator from '../../components/Translator';
 
 export const ProjectsPage = () => {
 

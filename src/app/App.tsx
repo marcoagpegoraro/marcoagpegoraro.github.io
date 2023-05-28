@@ -2,11 +2,11 @@ import './App.css';
 import React from 'react';
 import { NavBar } from './components/NavBar/NavBar';
 import { AppBar, Box, Button, Card, CardContent, CardMedia, IconButton, Toolbar, Typography } from '@mui/material';
-import { PresentationPage } from './components/PresentationPage/PresentationPage';
-import { YoutubePage } from './components/YoutubePage/YoutubePage';
-import { ResumePage } from './components/ResumePage/ResumePage';
-import { ProjectsPage } from './components/ProjectsPage/ProjectsPage';
-import { HobbiesPage } from './components/HobbiesPage/HobbiesPage';
+import { PresentationPage } from './pages/PresentationPage/PresentationPage';
+import { YoutubePage } from './pages/YoutubePage/YoutubePage';
+import { ResumePage } from './pages/ResumePage/ResumePage';
+import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
+import { HobbiesPage } from './pages/HobbiesPage/HobbiesPage';
 
 function App() {
 

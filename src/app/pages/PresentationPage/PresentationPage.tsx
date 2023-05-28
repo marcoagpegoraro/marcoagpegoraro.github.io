@@ -1,8 +1,8 @@
 
 import React from 'react';
 import { Avatar, Typography } from '@mui/material';
-import { FlexBreakLine } from '../FlexHelpers/FlexHelpers';
-import Translator from '../Translator';
+import { FlexBreakLine, FlexFillRow } from '../../components/FlexHelpers';
+import Translator from '../../components/Translator';
 
 export const PresentationPage = () => {
   return <>

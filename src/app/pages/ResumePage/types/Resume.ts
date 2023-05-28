@@ -1,10 +1,3 @@
-import { SvgIconTypeMap } from "@mui/material";
-import { OverridableComponent } from "@mui/material/OverridableComponent";
-
-interface IOptions {
-    options: string[]
- }
-
 export enum ResumeItemType{
     WORK = "W", STUDY = "S"
 }

@@ -8,7 +8,7 @@ import { Carousel } from 'react-responsive-carousel';
 import CloseIcon from '@mui/icons-material/Close';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
-import { FlexFillRow } from '../FlexHelpers/FlexHelpers';
+import { FlexFillRow } from '../../components/FlexHelpers';
 
 export const YoutubePage = () => {
 

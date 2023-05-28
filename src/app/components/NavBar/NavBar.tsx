@@ -7,7 +7,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { FlexFillRow } from '../FlexHelpers/FlexHelpers';
+import { FlexFillRow } from '../FlexHelpers';
 import { useTranslation } from 'react-i18next'
 
 export const NavBar = () => {

@@ -16,7 +16,7 @@ import { resumeItemList } from './ResumeItems';
 import type { FireworksHandlers } from '@fireworks-js/react'
 import { Fireworks } from '@fireworks-js/react'
 import Timeout from 'await-timeout';
-import { FlexBreakLine, FlexFillRow } from '../FlexHelpers/FlexHelpers';
+import { FlexBreakLine, FlexFillRow } from '../../components/FlexHelpers';
 
 export const ResumePage = () => {
   const fireworksRef = useRef<FireworksHandlers>(null)
