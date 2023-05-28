@@ -6,6 +6,7 @@ export const resumeItemList: ResumeItem[]  = [
     {
       name: "Itaú unibanco",
       icon: <AccountBalance />,
+      imageUrl: './itau-logo.png',
       aboutText: 'Software enginier',
       type: ResumeItemType.WORK,
       selectedIndex: 0
@@ -13,6 +14,7 @@ export const resumeItemList: ResumeItem[]  = [
     {
       name: "B2W Digital",
       icon: <StorefrontOutlined />,
+      imageUrl: './americanas-sa-logo.png',
       aboutText: `- Uso das linguagens de programação Java 8 e 11 com Spring Cloud e Angular com Typescript para desenvolvimento de produtos internos da companhia.
       - Apache Kafka. 
       - Nuvem AWS.`,
@@ -22,6 +24,7 @@ export const resumeItemList: ResumeItem[]  = [
     {
       name: "IBM Brasil",
       icon: <Computer />,
+      imageUrl: './ibm-logo.png',
       aboutText: `- Outsourcing Itaú Unibanco (One of the largest bank in Latin America)
       - Java 8, RxJava
       - Spring Boot, Spring Cloud, Junit 4, Mockito, Fixture
@@ -32,6 +35,7 @@ export const resumeItemList: ResumeItem[]  = [
     {
       name: "TI+ Soluções",
       icon: <TipsAndUpdates />,
+      imageUrl: 'http://timais.com/wp-content/uploads/2021/12/TIMAIS-LogoHome.jpg',
       aboutText: `- Manutenção em WebApps com AngularJS e APIs com ASP.NET Framework.
       - Criação de aplicativos Android com Ionic 3/4. 
       - Manutenção em projetos PHP com os frameworks FuelPHP e Yii 2.
@@ -42,6 +46,7 @@ export const resumeItemList: ResumeItem[]  = [
     {
       name: "Fatec Americana",
       icon: <School />,
+      imageUrl: 'https://www.fatec.edu.br/wp-content/themes/fatec/img/logo-colorido.png',
       aboutText: `Segurança da informação`,
       type: ResumeItemType.STUDY,
       selectedIndex: 4
@@ -49,6 +54,7 @@ export const resumeItemList: ResumeItem[]  = [
     {
       name: "Etec Americana",
       icon: <SchoolOutlined />,
+      imageUrl: 'https://www.etecpa.com.br/user/themes/g5_helium/images/intro/poli.png',
       aboutText: `- Formatação e manutenção de computadores
       - Conceito de POO
       - Redes

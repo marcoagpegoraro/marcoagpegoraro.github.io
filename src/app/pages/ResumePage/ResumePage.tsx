@@ -17,6 +17,7 @@ import type { FireworksHandlers } from '@fireworks-js/react'
 import { Fireworks } from '@fireworks-js/react'
 import Timeout from 'await-timeout';
 import { FlexBreakLine, FlexFillRow } from '../../components/FlexHelpers';
+import Translator from '../../components/Translator';
 
 export const ResumePage = () => {
   const fireworksRef = useRef<FireworksHandlers>(null)
@@ -51,19 +52,21 @@ export const ResumePage = () => {
       <div className='monitor'>
         <div className='window'>
           <div className='titlebar'>
-            <Typography marginLeft={1} color={'white'} fontSize={26} fontFamily={'MS Sans Serif'}>Sobre mim</Typography>
-            <FlexFillRow/>
+            <Typography marginLeft={1} color={'white'} fontSize={26} fontFamily={'MS Sans Serif'}>
+              <Translator path='resume.aboutMe'></Translator>
+            </Typography>
+            <FlexFillRow />
             <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10 }} /></Box>
             <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
             <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
           </div>
-          <FlexBreakLine/>
+          <FlexBreakLine />
           <Box sx={{ width: '100%', maxWidth: 260, bgcolor: 'background.paper', height: '85vh' }}>
             <nav aria-label="lista de experiencias profissionais">
               <List
                 subheader={
                   <ListSubheader component="div" id="lista-experiencias-profissionais">
-                    Minhas experiencias profissionais
+                    <Translator path='resume.myProfessionalExperiences'></Translator>
                   </ListSubheader>
                 }>
 
@@ -87,7 +90,7 @@ export const ResumePage = () => {
               <List
                 subheader={
                   <ListSubheader component="div" id="estudos-lista">
-                    Meus estudos
+                    <Translator path='resume.myEducation'></Translator>
                   </ListSubheader>
                 }
               >
@@ -109,9 +112,12 @@ export const ResumePage = () => {
           </Box>
           <Box sx={{ width: 'calc(100% - 260px)', bgcolor: 'background.paper', backgroundImage: 'url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000")' }}>
             {resumeItemList.filter(resumeItem => resumeItem.selectedIndex == selectedIndex).map(resumeItem =>
-              <Typography key={resumeItem.selectedIndex}>
-                {resumeItem.aboutText}
-              </Typography>
+              <section key={resumeItem.selectedIndex}>
+                <img src={resumeItem.imageUrl} style={{maxWidth: '20%'}}></img>
+                <Typography>
+                  {resumeItem.aboutText}
+                </Typography>
+              </section>
             )}
           </Box>
         </div>
