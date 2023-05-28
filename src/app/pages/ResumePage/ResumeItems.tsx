@@ -85,8 +85,9 @@ export const resumeItemList: ResumeItem[] = [
     date: 'Janeiro de 2017 - Junho de 2020',
     aboutText: `
       Curso de tecnologo focado no aprendizado de gerenciamento de redes e os principais 
-      protocolos do modelo OSI como Ethernet, IPV4, IPV6, DHCP, ARP, TCP,UDP, etc. 
-      assim como implementar regras de sub-redes, firewall com o objetivo de 
+      protocolos do modelo OSI como Ethernet, IPV4, IPV6, DHCP, ARP, TCP, UDP, etc. 
+      assim como implementar regras de sub-redes, firewall com o objetivo de garantir
+      uma rede segura. Aprendizado sobre o sistema operacional Linux. 
       `,
     type: ResumeItemType.STUDY,
     selectedIndex: 4
