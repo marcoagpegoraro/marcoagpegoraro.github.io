@@ -1,41 +1,72 @@
 
 import React from 'react';
 import './NavBar.css'
-import { AppBar, Button, IconButton, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup, Toolbar, Typography } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
-
+import { FlexFillRow } from '../FlexHelpers/FlexHelpers';
+import { useTranslation } from 'react-i18next'
 
 export const NavBar = () => {
+  const { i18n } = useTranslation()
+  const [webSiteLanguage, setWebSiteLanguage] = React.useState<string | undefined>(i18n.language)
+
+  const handleLanguageChange = (event: SelectChangeEvent) => {
+    setWebSiteLanguage(event.target.value)
+    i18n.changeLanguage(event.target.value)
+  }
+  
+
   return <>
-    <header >
+    <header>
       <AppBar position="relative" sx={{ bgcolor: "white" }}>
-        <Toolbar>
+        <Toolbar style={{ flexWrap: 'wrap' }}>
           <Button href='/' style={{ color: '#15141A' }}>
             <HomeIcon></HomeIcon>
             <Typography fontSize={'large'} fontWeight={'bold'}>
               &nbsp;Marco Pegoraro
             </Typography>
           </Button>
-          <div style={{ flexGrow: 1 }}></div>
-          <IconButton href="https://www.facebook.com/tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#3b5998' }}>
-            <FacebookIcon></FacebookIcon>
-          </IconButton>
-          <IconButton href="https://www.linkedin.com/in/marco-antonio-goncalves/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#0e76a8' }}>
-            <LinkedInIcon></LinkedInIcon>
-          </IconButton>
-          <IconButton href="https://www.instagram.com/marcoantonio.png/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
-            <InstagramIcon></InstagramIcon>
-          </IconButton>
-          <IconButton href="https://medium.com/@tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2 }} style={{ color: '#DD2A7B' }}>
-            <img style={{
-              width: 20,
-              height: 20,
-              padding: 2,
-            }} src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png'></img>
-          </IconButton>
+          <FlexFillRow />
+
+          <section className='social-network-buttons'>
+
+            <IconButton href="https://www.facebook.com/tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ ml: 2 }} style={{ color: '#3b5998' }}>
+              <FacebookIcon></FacebookIcon>
+            </IconButton>
+            <IconButton href="https://www.linkedin.com/in/marco-antonio-goncalves/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#0e76a8' }}>
+              <LinkedInIcon></LinkedInIcon>
+            </IconButton>
+            <IconButton href="https://www.instagram.com/marcoantonio.png/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
+              <InstagramIcon></InstagramIcon>
+            </IconButton>
+            <IconButton href="https://medium.com/@tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2 }} style={{ color: '#DD2A7B' }}>
+              <img style={{
+                width: 20,
+                height: 20,
+                padding: 2,
+              }} src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' />
+            </IconButton>
+          </section>
+          <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
+            <InputLabel id="demo-select-small-label">Language</InputLabel>
+            <Select
+              labelId="demo-select-small-label"
+              id="demo-select-small"
+              value={webSiteLanguage}
+              label="Language"
+              onChange={handleLanguageChange}
+            >
+              {/* <MenuItem value="">
+                <em>None</em>
+              </MenuItem> */}
+              <MenuItem value={'en-US'}>🇺🇸 English</MenuItem>
+              <MenuItem value={'pt-BR'}>🇧🇷 Português</MenuItem>
+              <MenuItem value={'it-IT'}>🇮🇹 Italiano</MenuItem>
+            </Select>
+          </FormControl>
         </Toolbar>
       </AppBar>
     </header>

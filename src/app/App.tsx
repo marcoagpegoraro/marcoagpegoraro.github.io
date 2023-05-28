@@ -7,6 +7,7 @@ import { MyWorkPage } from './components/MyWorkPage/MyWorkPage';
 import FloatingScrollPageButton from './components/FloatingScrollPageButton/FloatingScrollPageButton';
 import { ResumePage } from './components/ResumePage/ResumePage';
 import { ProjectsPage } from './components/ProjectsPage/ProjectsPage';
+import Translator from './components/Translator';
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
         backgroundColor: '#F2F2F2'
       }}>
       <NavBar></NavBar>
+      {Translator({path:"home.message"})}
       <PresentationPage></PresentationPage>
       <ResumePage />
       <ProjectsPage />
