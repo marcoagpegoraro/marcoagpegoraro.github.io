@@ -4,32 +4,33 @@ import { Avatar, Box, Button, Card, CardActionArea, CardContent, CardMedia, Pape
 import './Styles.css'
 import { projects } from './Projects';
 import { FlexBreakLine } from '../FlexHelpers/FlexHelpers';
+import Translator from '../Translator';
 
 export const ProjectsPage = () => {
 
 
   return <>
     <div className='projects-page'>
-      <h1>Alguns projetos que participei ou criei</h1>
-      <FlexBreakLine/>
+      <h1><Translator path={"projects.title"} /></h1>
+      <FlexBreakLine />
       {projects.map(project =>
-        <Card sx={{ maxWidth: 345, margin: '2%' }} key={project.name} >
+        <Card sx={{ maxWidth: 345, margin: '2%' }} key={project.id} >
           <CardActionArea href={project.link} target='_blank'>
             <CardMedia
               component="img"
               height="200"
               image={project.imageUrl}
-              alt={project.name}
+              alt={project.id}
             />
             <CardContent>
               <Typography gutterBottom variant="h5" component="div">
-                {project.name}
+                <Translator path={project.name} />
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                {project.description}
+                <Translator path={project.description} />
               </Typography>
               <Typography variant="body2" color="text.secondary">
-                {project.date}
+                <Translator path={project.date} />
               </Typography>
             </CardContent>
           </CardActionArea>
