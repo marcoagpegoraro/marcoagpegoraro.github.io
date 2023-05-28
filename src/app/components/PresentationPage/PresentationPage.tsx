@@ -6,7 +6,7 @@ import Translator from '../Translator';
 
 export const PresentationPage = () => {
   return <>
-    <div style={{ display: 'flex', alignItems: 'center',  justifyContent: 'center', height: 'calc(100vh)', flexWrap: 'wrap' }}>
+    <div style={{ display: 'flex', alignItems: 'center',  justifyContent: 'space-around', flexDirection: 'row', height: 'calc(100vh)', flexWrap: 'wrap' }}>
     <Avatar
         style={{ marginBottom: -100 }}
         variant="circular"

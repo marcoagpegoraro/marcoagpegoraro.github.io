@@ -10,7 +10,7 @@ import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';
 import { FlexFillRow } from '../FlexHelpers/FlexHelpers';
 
-export const MyWorkPage = () => {
+export const YoutubePage = () => {
 
   const images = [
     "https://images.unsplash.com/photo-1509721434272-b79147e0e708?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1500&q=80",
@@ -19,7 +19,7 @@ export const MyWorkPage = () => {
   ];
 
   return <>
-    <div className='my-work-page'>
+    <div className='youtube-page'>
       <div className='monitor' style={{ backgroundImage: `url('/imac.png')` }}>
         <div className='slide'>
           <div className='titlebar'>
