@@ -1,5 +1,5 @@
 export default {
-    translations: { // Mesmo valor usado nas configurações (defaultNS)
+    translations: {
       home: {
         message: 'Olá Mundo!'
       }

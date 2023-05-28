@@ -1,3 +1,4 @@
+import React from 'react'
 import { useTranslation } from 'react-i18next'
 
 interface params{
@@ -6,7 +7,7 @@ interface params{
 
 const Translator = ({ path }: params) => {
   const { t } = useTranslation()
-  return t(path)
+  return <>{t(path)}</>
 }
 
 export default Translator
