@@ -6,6 +6,7 @@ import HomeIcon from '@mui/icons-material/Home';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
+import GitHubIcon from '@mui/icons-material/GitHub';
 import { FlexFillRow } from '../FlexHelpers/FlexHelpers';
 import { useTranslation } from 'react-i18next'
 
@@ -42,12 +43,15 @@ export const NavBar = () => {
             <IconButton href="https://www.instagram.com/marcoantonio.png/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
               <InstagramIcon></InstagramIcon>
             </IconButton>
-            <IconButton href="https://medium.com/@tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2 }} style={{ color: '#DD2A7B' }}>
+            <IconButton href="https://medium.com/@tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
               <img style={{
                 width: 20,
                 height: 20,
                 padding: 2,
               }} src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' />
+            </IconButton>
+            <IconButton href="https://github.com/marcoagpegoraro" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2, color: 'black' }}>
+              <GitHubIcon/>
             </IconButton>
           </section>
           <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
