@@ -5,6 +5,11 @@ export default {
       },
       projects:{
         title: "Some projects that i did or help it",
+        awscloudpractitioner: {
+            name: "AWS Cloud Practitioner",
+            description: `Certificate`,
+            date: "Aug 23, 2021"
+        },
         gorlami: {
             name: "Article about the film Inglorious Bastards",
             description: `Learning Italian with the "Gorlami" cene at Inglorious Bastards`,

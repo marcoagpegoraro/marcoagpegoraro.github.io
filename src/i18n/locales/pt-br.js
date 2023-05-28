@@ -7,6 +7,11 @@ export default {
     },
       projects:{
         title: "Alguns projetos que criei ou participei",
+        awscloudpractitioner: {
+            name: "AWS Cloud Practitioner",
+            description: `Certificado`,
+            date: "23/08/2021"
+        },
         gorlami: {
             name: "Artigo sobre cena do filme Inglorious Bastards",
             description: `Aprendendo italiano com base na cena do "Gorlami" em Inglorious Bastards`,

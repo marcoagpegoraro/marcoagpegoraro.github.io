@@ -1,7 +1,4 @@
 .projects-page {
-    /* display: grid; */
-    /* height: calc(100vh); */
-    padding: 2%;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
