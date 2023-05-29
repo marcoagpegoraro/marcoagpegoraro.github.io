@@ -15,7 +15,7 @@
     max-width: 1034px;
 }
 
-.window{
+.window {
     margin: 0 auto;
     margin-top: 2%;
     width: 90%;
@@ -28,9 +28,50 @@
 }
 
 .titlebar {
-    width: 100%; 
-    height: 38px; 
+    width: 100%;
+    height: 38px;
     display: flex;
     background-image: linear-gradient(to right, #000180, #1084d0);
     flex-direction: row;
+}
+
+.second-titlebar{
+    width: 100%;
+    height: 38px;
+    display: flex;
+    background-color: #C0C0C0; 
+    flex-direction: row;
+    display: none;
+}
+
+.lista-botoes {
+    width: 100%;
+    max-width: 260px;
+    height: 85vh;
+}
+
+.content {
+    width: calc(100% - 260px);
+    background-image: url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000");
+}
+
+.inner-content {
+    margin: 10%;
+}
+
+.resume-logo {
+    max-width: 20%;
+}
+
+@media only screen and (max-width: 768px) {
+    .second-titlebar{
+        display: flex;
+    }
+    .lista-botoes {
+        display: none;
+    }
+    .content {
+        width: calc(100%);
+        height: 85vh;
+    }
 }
