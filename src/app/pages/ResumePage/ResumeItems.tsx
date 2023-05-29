@@ -95,8 +95,11 @@ export const resumeItemList: ResumeItem[] = [
       Curso de tecnologo focado no aprendizado de gerenciamento de redes e os principais 
       protocolos do modelo OSI como Ethernet, IPV4, IPV6, DHCP, ARP, TCP, UDP, etc. 
       assim como implementar regras de sub-redes, firewall com o objetivo de garantir
-      uma rede segura. Aprendizado sobre o sistema operacional Linux. 
-      `],
+      uma rede segura. Aprendizado sobre o sistema operacional Linux.`,
+      
+      `Meu TCC foi um trabalho que fiz com um amigo sobre `
+    
+    ],
     type: ResumeItemType.STUDY,
     selectedIndex: 4
   },
