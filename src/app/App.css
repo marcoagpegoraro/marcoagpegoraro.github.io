@@ -1,0 +1,36 @@
+.app {
+  text-align: center;
+  background-color: #F2F2F2;
+  display: flex;
+  flex-direction: column;
+}
+
+.app-content {
+  max-width: 1440px;
+  align-self: center;
+}
+
+
+#select-mobile-screen{
+  display: none;
+}
+
+.break-line-mobile-screen{
+  display: none;
+}
+
+
+@media only screen and (max-width: 542px) {
+  #select-pc-screen {
+      display: none;
+  }
+  #select-mobile-screen{
+    display: flex;
+  }
+  .social-network-buttons{
+    margin: 0 auto;
+  }
+  .break-line-mobile-screen{
+    display: flex;
+  }
+}

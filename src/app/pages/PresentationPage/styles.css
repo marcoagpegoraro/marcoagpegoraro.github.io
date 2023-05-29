@@ -1,0 +1,35 @@
+@font-face {
+    font-family: accidental_presidency;
+    src: local("THEBOLDFONT"),
+        url("../../../fonts/accidental_presidency/accid___.ttf") format("truetype");
+}
+
+.name {
+    margin: 0;
+    font-size: 50pt;
+}
+
+.title {
+    margin: 0;
+    font-size: 30pt;
+}
+
+@media only screen and (max-width: 722px) {
+    .name {
+        font-size: 40pt;
+    }
+
+    .title {
+        font-size: 20pt;
+    }
+}
+
+@media only screen and (max-width: 569px) {
+    .name {
+        font-size: 24pt;
+    }
+
+    .title {
+        font-size: 12pt;
+    }
+}
