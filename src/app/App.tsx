@@ -23,7 +23,8 @@ function App() {
       <AboutMePage/>
       <ResumePage />
       <ProjectsPage />
-      <HobbiesPage/>
+      {/* <HobbiesPage/> */}
+      {/* <YoutubePage /> */}
       <ScrollTop/>
     </div>
   );
