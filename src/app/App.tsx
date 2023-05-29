@@ -9,7 +9,6 @@ import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
 import { HobbiesPage } from './pages/HobbiesPage/HobbiesPage';
 import { AboutMePage } from './pages/AboutMePage/AboutMePage';
 import ScrollTop from './components/ScrollTop';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
 
 function App() {
 
@@ -25,11 +24,7 @@ function App() {
       <ResumePage />
       <ProjectsPage />
       <HobbiesPage/>
-      <ScrollTop>
-        <Fab size="small" aria-label="scroll back to top">
-          <KeyboardArrowUpIcon />
-        </Fab>
-      </ScrollTop>
+      <ScrollTop/>
     </div>
   );
 }

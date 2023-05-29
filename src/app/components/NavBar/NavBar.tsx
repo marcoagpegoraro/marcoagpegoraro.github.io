@@ -61,9 +61,6 @@ export const NavBar = () => {
               label="Language"
               onChange={handleLanguageChange}
             >
-              {/* <MenuItem value="">
-                <em>None</em>
-              </MenuItem> */}
               <MenuItem value={'en-US'}>🇺🇸 English</MenuItem>
               <MenuItem value={'pt-BR'}>🇧🇷 Português</MenuItem>
               <MenuItem value={'it-IT'}>🇮🇹 Italiano</MenuItem>
