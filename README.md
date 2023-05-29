@@ -68,3 +68,5 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+Para realizar o deploy em produção, rode o comando `npm run deploy`, esse comando vai fazer o build em produção do React e colocar o código automaticamente na branch master, que será usada pelo Github.

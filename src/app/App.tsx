@@ -7,6 +7,7 @@ import { YoutubePage } from './pages/YoutubePage/YoutubePage';
 import { ResumePage } from './pages/ResumePage/ResumePage';
 import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
 import { HobbiesPage } from './pages/HobbiesPage/HobbiesPage';
+import { AboutMePage } from './pages/AboutMePage/AboutMePage';
 
 function App() {
 
@@ -17,7 +18,8 @@ function App() {
         backgroundColor: '#F2F2F2'
       }}>
       <NavBar></NavBar>
-      <PresentationPage></PresentationPage>
+      <PresentationPage/>
+      <AboutMePage/>
       <ResumePage />
       <ProjectsPage />
       <HobbiesPage/>

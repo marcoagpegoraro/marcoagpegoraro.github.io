@@ -6,7 +6,7 @@ export default {
       message3: `Meus principais hobbies são carros 🚗, musica 🎵, relogios ⌚ e tecnologias antigas, como computadores 💾 ou videogames 🎮 da decada de 90 e 00, acho fascinante pesquisar sobre a história das coisas e ver como elas evoluiram até se tornar o que é hoje. atuamente tenho um Honda Accord 1993 Wagon no qual eu e minha namorada somos muito apegados. Tenho ingles avançado e atualmente estou em processo de aprendizado da lingua italiana.`,
     },
     resume: {
-      aboutMe: `Sobre mim`,
+      aboutMe: `Meu curriculo`,
       myProfessionalExperiences: `Minhas experiencias profissionais`,
       myEducation: `Meus estudos`,
     },
