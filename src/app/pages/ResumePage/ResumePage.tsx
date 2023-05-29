@@ -120,12 +120,12 @@ export const ResumePage = () => {
             {resumeItemList.filter(resumeItem => resumeItem.selectedIndex == selectedIndex).map(resumeItem =>
               <section className='inner-content' key={resumeItem.selectedIndex} >
                 <img className='resume-logo' src={resumeItem.imageUrl} />
-                <br /><br />
+                {resumeItem.chips ? <><br /><br /></> : ''}
                 {resumeItem.chips?.map(chip => chip)}
                 <br /><br />
                 {resumeItem.date}
                 <br /><br />
-                {resumeItem.aboutText}
+                {resumeItem.aboutText.map(paragraph => <>{paragraph}<br/><br/></>)}
               </section>
             )}
           </Box>

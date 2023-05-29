@@ -8,7 +8,7 @@ export default interface ResumeItem {
     imageUrl?: string
     date?: string
     chips?: any[]
-    aboutText: string
+    aboutText: string[]
     type: ResumeItemType
     selectedIndex: number
 }
