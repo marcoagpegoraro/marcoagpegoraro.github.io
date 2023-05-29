@@ -23,10 +23,10 @@ export const PresentationPage = () => {
         sx={{ width: 300, height: 300, mt: 10 }}
       />
 
-      <Typography maxWidth={'50%'} textOverflow={'clip'} fontFamily={'accidental_presidency'}  >
+      <span style={{maxWidth: '50%',textOverflow: 'clip', fontFamily: 'accidental_presidency'}}  >
         <h1 className='name'>Marco Pegoraro</h1>
         <h5 className='title'>Desenvolvedor de software Fullstack</h5>
-      </Typography>
+      </span>
     </div>
   </>
 }

@@ -121,11 +121,11 @@ export const ResumePage = () => {
               <section className='inner-content' key={resumeItem.selectedIndex} >
                 <img className='resume-logo' src={resumeItem.imageUrl} />
                 {resumeItem.chips ? <><br /><br /></> : ''}
-                {resumeItem.chips?.map(chip => chip)}
+                {resumeItem.chips?.map(chip => <span key={Math.random()}>{chip}</span>)}
                 <br /><br />
                 {resumeItem.date}
                 <br /><br />
-                {resumeItem.aboutText.map(paragraph => <>{paragraph}<br/><br/></>)}
+                {resumeItem.aboutText.map(paragraph => <span key={Math.random()}>{paragraph}<br/><br/></span>)}
               </section>
             )}
           </Box>
