@@ -59,8 +59,8 @@ export const ResumePage = () => {
             <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3 }} /></Box>
           </div>
           <div className='second-titlebar'>
-            <Typography sx={{ margin: '6px 1px 0 1px' }}>Escolher Outra empresa:</Typography>
-            <select style={{ backgroundColor: '#008080', cursor: 'pointer', border: 'none' }} onChange={(event) => setSelectedIndex(+(event.target.value))} value={selectedIndex}>
+            <Typography sx={{ margin: '6px 4px 0 8px' }}>Escolher Outra empresa:</Typography>
+            <select style={{ backgroundColor: '#008080', cursor: 'pointer', border: 'none', textAlign: 'center', fontWeight: 'bold', marginTop: 4,height: '30px' }} onChange={(event) => setSelectedIndex(+(event.target.value))} value={selectedIndex}>
               {resumeItemList.map(resumeItem =>
                 <option key={resumeItem.name} value={resumeItem.selectedIndex}>{resumeItem.name}</option>
               )}
