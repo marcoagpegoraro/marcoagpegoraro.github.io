@@ -21,12 +21,11 @@ export const NavBar = () => {
 
   return <>
     <header>
-      <AppBar position="relative" sx={{ bgcolor: "white" }}>
+      <AppBar className='nav-bar' position="relative" sx={{ bgcolor: "white" }}>
         <Toolbar style={{ flexWrap: 'wrap' }}>
           <Button href='/' style={{ color: '#15141A' }}>
-            <HomeIcon></HomeIcon>
             <Typography fontSize={'large'} fontWeight={'bold'}>
-              &nbsp;Marco Pegoraro
+              M&nbsp;P
             </Typography>
           </Button>
           <FlexFillRow />
