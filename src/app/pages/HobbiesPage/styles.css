@@ -7,7 +7,6 @@
 .mimo {
     width: 200px;
     align-self: baseline;
-    animation: rotation 2s infinite linear;
 }
 
 .jinx-e-mimi {
@@ -19,13 +18,21 @@
 .jinx {
     width: 200px;
     align-self: baseline;
-    animation: rotation 2s infinite linear;
 }
 
 .mimi {
     width: 200px;
     align-self: baseline;
 }
+
+@media (prefers-reduced-motion: no-preference) {
+    .mimo {
+        animation: rotation 2s infinite linear;
+    }
+    .jinx {
+        animation: rotation 2s infinite linear;
+    }
+  }
 
 @keyframes rotation {
     50% {

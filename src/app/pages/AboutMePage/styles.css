@@ -1,6 +1,23 @@
+.about-me-text{
+    max-width: 70%;
+    align-self: baseline;
+}
 
-@media only screen and (max-width: 936px) {
+.space-text-next-page{
+    width: 0px;
+    height: 70px;
+    display: none;
+}
+
+@media only screen and (max-width: 956px) {
     .marco-presenting {
         display: none;
     }
+    .about-me-text{
+        max-width: 90%;
+    }
+    .space-text-next-page{
+        display: flex;
+    }
+    
 }

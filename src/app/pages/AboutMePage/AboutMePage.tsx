@@ -13,7 +13,7 @@ export const AboutMePage = () => {
        justifyContent: 'space-around', 
        flexDirection: 'row', 
        flexWrap: 'wrap' }}>
-      <Typography maxWidth={'70%'} fontSize={'larger'}>
+      <Typography className='about-me-text' fontSize={'larger'}>
         <Translator path='home.message1' stringReplaces={[{ stringToReplace: "%%ANOS%%", replaceTo: `${new Date().getFullYear() - 1999}` }]} />
         <br /><br />
         <Translator path='home.message2' />
@@ -22,5 +22,6 @@ export const AboutMePage = () => {
       </Typography>
       <img className='marco-presenting' src='./marco-presenting.png'></img>
     </div>
+    <div className='space-text-next-page'/>
   </>
 }

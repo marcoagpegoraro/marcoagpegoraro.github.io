@@ -13,19 +13,19 @@ import ScrollTop from './components/ScrollTop';
 function App() {
 
   return (
-    <div
-      className="App"
-      style={{
-        backgroundColor: '#F2F2F2'
-      }}>
-      <NavBar></NavBar>
-      <PresentationPage/>
-      <AboutMePage/>
-      <ResumePage />
-      <ProjectsPage />
-      {/* <HobbiesPage/> */}
-      {/* <YoutubePage /> */}
-      <ScrollTop/>
+    <div className="app">
+      <NavBar/>
+      <div className='app-content'>
+
+        <PresentationPage />
+        <AboutMePage />
+        <ResumePage />
+        <ProjectsPage />
+        {/* <HobbiesPage/> */}
+        {/* <YoutubePage /> */}
+        <ScrollTop />
+      </div>
+
     </div>
   );
 }

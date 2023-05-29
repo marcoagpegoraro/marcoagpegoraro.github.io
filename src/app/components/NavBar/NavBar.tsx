@@ -6,7 +6,7 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
-import { FlexFillRow } from '../FlexHelpers';
+import { FlexBreakLine, FlexFillRow } from '../FlexHelpers';
 import { useTranslation } from 'react-i18next'
 
 export const NavBar = () => {
@@ -18,6 +18,22 @@ export const NavBar = () => {
     i18n.changeLanguage(event.target.value)
   }
   
+  const selectLanguageInput = (id: string) => {
+    return <FormControl id={id} sx={{ m: 1, minWidth: 120 }} size="small">
+    <InputLabel id="Language">Language</InputLabel>
+    <Select
+      labelId="Language"
+      id="Language"
+      value={webSiteLanguage}
+      label="Language"
+      onChange={handleLanguageChange}
+    >
+      <MenuItem value={'en-US'}>🇺🇸 English</MenuItem>
+      <MenuItem value={'pt-BR'}>🇧🇷 Português</MenuItem>
+      <MenuItem value={'it-IT'}>🇮🇹 Italiano</MenuItem>
+    </Select>
+  </FormControl>
+  }
 
   return <>
     <header>
@@ -29,6 +45,8 @@ export const NavBar = () => {
             </Typography>
           </Button>
           <FlexFillRow />
+          {selectLanguageInput("select-mobile-screen")}
+          <FlexBreakLine className='break-line-mobile-screen' />
 
           <section className='social-network-buttons'>
 
@@ -52,20 +70,7 @@ export const NavBar = () => {
               <GitHubIcon/>
             </IconButton>
           </section>
-          <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-            <InputLabel id="demo-select-small-label">Language</InputLabel>
-            <Select
-              labelId="demo-select-small-label"
-              id="demo-select-small"
-              value={webSiteLanguage}
-              label="Language"
-              onChange={handleLanguageChange}
-            >
-              <MenuItem value={'en-US'}>🇺🇸 English</MenuItem>
-              <MenuItem value={'pt-BR'}>🇧🇷 Português</MenuItem>
-              <MenuItem value={'it-IT'}>🇮🇹 Italiano</MenuItem>
-            </Select>
-          </FormControl>
+          {selectLanguageInput("select-pc-screen")}
         </Toolbar>
       </AppBar>
     </header>
