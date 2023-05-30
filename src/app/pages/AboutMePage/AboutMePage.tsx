@@ -14,11 +14,11 @@ export const AboutMePage = () => {
        flexDirection: 'row', 
        flexWrap: 'wrap' }}>
       <Typography className='about-me-text' fontSize={'larger'}>
-        <Translator path='home.message1' stringReplaces={[{ stringToReplace: "%%ANOS%%", replaceTo: `${new Date().getFullYear() - 1999}` }]} />
+        <Translator path='aboutMe.message1' stringReplaces={[{ stringToReplace: "%%ANOS%%", replaceTo: `${new Date().getFullYear() - 1999}` }]} />
         <br /><br />
-        <Translator path='home.message2' />
+        <Translator path='aboutMe.message2' />
         <br /><br />
-        <Translator path='home.message3' />
+        <Translator path='aboutMe.message3' />
       </Typography>
       <img className='marco-presenting' src='./marco-presenting.png'></img>
     </div>

@@ -18,13 +18,16 @@ import { Fireworks } from '@fireworks-js/react'
 import Timeout from 'await-timeout';
 import { FlexBreakLine, FlexFillRow } from '../../components/FlexHelpers';
 import Translator from '../../components/Translator';
-import { ArrowDropDown } from '@mui/icons-material';
+import { TextField } from '@mui/material';
+import { useTranslation } from 'react-i18next'
 
 export const ResumePage = () => {
   const fireworksRef = useRef<FireworksHandlers>(null)
 
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [displayFireworksEasterEgg, setDisplayFireworksEasterEgg] = useState('none');
+
+  const { t } = useTranslation()
 
 
   const activeFireworksEasterEgg = async () => {
@@ -51,7 +54,7 @@ export const ResumePage = () => {
         <div className='window'>
           <div className='titlebar'>
             <Typography marginLeft={1} color={'white'} fontSize={26}>
-              <Translator path='resume.aboutMe'></Translator>
+              <Translator path='resume.windowText'></Translator>
             </Typography>
             <FlexFillRow />
             <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10 }} /></Box>
@@ -79,7 +82,6 @@ export const ResumePage = () => {
                 {resumeItemList.filter(resumeItem => resumeItem.type == ResumeItemType.WORK).map(resumeItem =>
                   <ListItem disablePadding key={resumeItem.selectedIndex}>
                     <ListItemButton
-
                       selected={selectedIndex === resumeItem.selectedIndex}
                       onClick={(event) => handleListItemClick(event, resumeItem.selectedIndex)}>
                       <ListItemIcon>
@@ -121,11 +123,11 @@ export const ResumePage = () => {
               <section className='inner-content' key={resumeItem.selectedIndex} >
                 <img className='resume-logo' src={resumeItem.imageUrl} />
                 {resumeItem.chips ? <><br /><br /></> : ''}
-                {resumeItem.chips?.map(chip => <span key={Math.random()}>{chip}</span>)}
+                {resumeItem.chips?.map((chip, index) => <span key={index}>{chip}</span>)}
                 <br /><br />
-                {resumeItem.date}
+                <Translator path={resumeItem.date}/>
                 <br /><br />
-                {resumeItem.aboutText.map(paragraph => <span key={Math.random()}>{paragraph}<br/><br/></span>)}
+                {resumeItem.aboutText.map((paragraph, index) => <span key={index}><Translator path={paragraph}/><br/><br/></span>)}
               </section>
             )}
           </Box>

@@ -37,7 +37,7 @@ export const NavBar = () => {
 
   return <>
     <header>
-      <AppBar className='nav-bar' position="relative" sx={{ bgcolor: "white" }}>
+      <AppBar className='nav-bar' position="relative" style={{ background: 'transparent', boxShadow: 'none'}}>
         <Toolbar style={{ flexWrap: 'wrap' }}>
           <Button href='/' style={{ color: '#15141A' }}>
             <Typography fontSize={'large'} fontWeight={'bold'}>

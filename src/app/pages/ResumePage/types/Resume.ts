@@ -6,7 +6,7 @@ export default interface ResumeItem {
     name: string
     icon: any
     imageUrl?: string
-    date?: string
+    date: string
     chips?: any[]
     aboutText: string[]
     type: ResumeItemType

@@ -1,14 +1,81 @@
 export default {
   translations: {
-    home: {
+    presentation: {
+      title: `Desenvolvedor de software Fullstack`
+    },
+    aboutMe: {
       message1: `Olá, seja bem vindo ao meu site pessoal 🙋‍♂️, meu nome é Marco, tenho %%ANOS%% anos, trabalho atualmente como desenvolvedor de software para o Itaú Unibanco, começei a aprender programação desde 2014 quando entrei no ensino médio e sempre estou procurando aprender novas tecnologias.`,
       message2: `Hoje no trabalho, atuo principalmente na parte de modernização utilizando Java junto com as tecnologias de Kafka e mensageria, tenho conhecimento basico em Terraform e sou certificado AWS Cloud Practitioner, mas também tenho conhecimento com as linguagens C#, PHP, Dart com Flutter para criação de Apps Mobile e JavaScript, essa ultima na qual é a linguagem padrão que utilizo para a criação de projetos pessoais, junto com o framework Next.js`,
       message3: `Meus principais hobbies são carros 🚗, musica 🎵, relogios ⌚ e tecnologias antigas, como computadores 💾 ou videogames 🎮 da decada de 90 e 00, acho fascinante pesquisar sobre a história das coisas e ver como elas evoluiram até se tornar o que é hoje. atuamente tenho um Honda Accord 1993 Wagon no qual eu e minha namorada somos muito apegados. Tenho ingles avançado e atualmente estou em processo de aprendizado da lingua italiana.`,
     },
     resume: {
-      aboutMe: `Meu curriculo`,
+      windowText: `Meu curriculo`,
       myProfessionalExperiences: `Minhas experiencias profissionais`,
       myEducation: `Meus estudos`,
+      resumeItems: {
+        itau: {
+          date: 'Junho de 2021 - Atual',
+          aboutText: {
+            "1": 'Software enginier'
+          }
+        },
+        b2w: {
+          date: 'Setembro de 2020 - Junho de 2021',
+          aboutText: {
+            "1": `- Uso das linguagens de programação Java 8 e 11 com Spring Cloud e Angular com Typescript para desenvolvimento de produtos internos da companhia.
+            - Apache Kafka. 
+            - Nuvem AWS.`
+          }
+        },
+        ibm: {
+          date: 'Agosto de 2019 - Setembro de 2020',
+          aboutText: {
+            "1": `- Outsourcing Itaú Unibanco (One of the largest bank in Latin America)
+            - Java 8, RxJava
+            - Spring Boot, Spring Cloud, Junit 4, Mockito, Fixture
+            - Java instructor for interns`
+          }
+        },
+        timais: {
+          date: 'Julho de 2018 - Agosto de 2019',
+          aboutText: {
+            "1": `
+            Começei sendo programador C# programando em ASP.NET junto com o framework AngularJS, 
+            mas em seguida já fiquei responsáveis por alguns projetos em PHP, e também em programação
+            mobile com o framework Ionic, foi ai que obtive grande conhecimento em TypeScript.
+             também tive a oportunidade
+            de programar na linguagem 4GL, que é uma linguagem utilizada pela empresa TOTVS no 
+            ERP Logix, é uma linguagem muito semelhante a procedures de banco de dados porém com 
+            o adicional de criar telas.`,
+            "2": `Foi meu primeiro emprego como programador! Sou muito grato por tudo que aprendi na TI+.
+            Sempre vou me lembrar dos bons momentos que tivemos juntos.
+        `
+          }
+        },
+        fatec: {
+          date: 'Janeiro de 2017 - Junho de 2020',
+          aboutText: {
+            "1": `
+            Curso de tecnologo focado no aprendizado de gerenciamento de redes e os principais 
+            protocolos do modelo OSI como Ethernet, IPV4, IPV6, DHCP, ARP, TCP, UDP, etc. 
+            assim como implementar regras de sub-redes, firewall com o objetivo de garantir
+            uma rede segura. Aprendizado sobre o sistema operacional Linux.`,
+            "2": `Meu TCC foi um trabalho que fiz com um amigo sobre `
+          }
+        },
+        etec: {
+          date: 'Janeiro de 2014 - Dezembro de 2016',
+          aboutText: {
+            "1":`
+            Foi onde fiz meu ensino médio junto ao curso de técnico de informática, foi aqui que tive
+            o primeiro contato com programação e desde sempre soube que era isso que queria trabalhar 
+            no futuro, fiz amigos que tenho até hoje e tenho muito orgulho de ter estudado aqui. 
+            Aprendi os conceitos de Linguagem de programação com C, programação orientada a objetos, 
+            formatação de computadores, redes, HTML e android básico com java.`
+          }
+        }
+
+      }
     },
     projects: {
       title: "Alguns projetos que criei ou participei",

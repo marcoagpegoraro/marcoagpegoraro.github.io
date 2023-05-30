@@ -25,7 +25,7 @@ export const PresentationPage = () => {
 
       <span style={{maxWidth: '50%',textOverflow: 'clip', fontFamily: 'accidental_presidency'}}  >
         <h1 className='name'>Marco Pegoraro</h1>
-        <h5 className='title'>Desenvolvedor de software Fullstack</h5>
+        <h5 className='title'><Translator path='presentation.title'/></h5>
       </span>
     </div>
   </>
