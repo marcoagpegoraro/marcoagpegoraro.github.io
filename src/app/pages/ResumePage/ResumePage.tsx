@@ -79,7 +79,7 @@ export const ResumePage = () => {
                   </ListSubheader>
                 }>
 
-                {resumeItemList.filter(resumeItem => resumeItem.type == ResumeItemType.WORK).map(resumeItem =>
+                {resumeItemList.filter(resumeItem => resumeItem.type === ResumeItemType.WORK).map(resumeItem =>
                   <ListItem disablePadding key={resumeItem.selectedIndex}>
                     <ListItemButton
                       selected={selectedIndex === resumeItem.selectedIndex}
@@ -103,7 +103,7 @@ export const ResumePage = () => {
                 }
               >
 
-                {resumeItemList.filter(resumeItem => resumeItem.type == ResumeItemType.STUDY).map(resumeItem =>
+                {resumeItemList.filter(resumeItem => resumeItem.type === ResumeItemType.STUDY).map(resumeItem =>
                   <ListItem disablePadding key={resumeItem.selectedIndex}>
                     <ListItemButton
                       selected={selectedIndex === resumeItem.selectedIndex}
@@ -119,7 +119,7 @@ export const ResumePage = () => {
             </nav>
           </Box>
           <Box className='content' sx={{ bgcolor: 'background.paper' }}>
-            {resumeItemList.filter(resumeItem => resumeItem.selectedIndex == selectedIndex).map(resumeItem =>
+            {resumeItemList.filter(resumeItem => resumeItem.selectedIndex === selectedIndex).map(resumeItem =>
               <section className='inner-content' key={resumeItem.selectedIndex} >
                 <img className='resume-logo' src={resumeItem.imageUrl} />
                 {resumeItem.chips ? <><br /><br /></> : ''}

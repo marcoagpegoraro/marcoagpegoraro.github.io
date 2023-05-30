@@ -14,22 +14,12 @@
     font-size: 30pt;
 }
 
-@media only screen and (max-width: 722px) {
+@media only screen and (max-width: 590px) {
     .name {
         font-size: 40pt;
     }
 
     .title {
-        font-size: 20pt;
-    }
-}
-
-@media only screen and (max-width: 569px) {
-    .name {
-        font-size: 24pt;
-    }
-
-    .title {
-        font-size: 12pt;
+        font-size: 26pt;
     }
 }

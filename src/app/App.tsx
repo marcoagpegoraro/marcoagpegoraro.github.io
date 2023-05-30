@@ -1,6 +1,6 @@
 import './App.css';
 import React from 'react';
-import { NavBar } from './components/NavBar/NavBar';
+import { NavBar } from './components/NavBar';
 import { AppBar, Box, Button, Card, CardContent, CardMedia, Fab, IconButton, Toolbar, Typography } from '@mui/material';
 import { PresentationPage } from './pages/PresentationPage/PresentationPage';
 import { YoutubePage } from './pages/YoutubePage/YoutubePage';

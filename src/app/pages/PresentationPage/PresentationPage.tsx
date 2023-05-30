@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { Avatar, Typography } from '@mui/material';
-import { FlexBreakLine, FlexFillRow } from '../../components/FlexHelpers';
+import { Avatar } from '@mui/material';
 import Translator from '../../components/Translator';
 import '../../../fonts/accidental_presidency/accid___.ttf'
 import './styles.css'
@@ -16,14 +15,13 @@ export const PresentationPage = () => {
       flexWrap: 'wrap'
     }}>
       <Avatar
-
         variant="circular"
         alt="Marco Antonio"
-        src="./eu.jpg"
+        src="https://github.com/marcoagpegoraro.png"
         sx={{ width: 300, height: 300, mt: 10 }}
       />
 
-      <span style={{maxWidth: '50%',textOverflow: 'clip', fontFamily: 'accidental_presidency'}}  >
+      <span style={{ fontFamily: 'accidental_presidency'}}  >
         <h1 className='name'>Marco Pegoraro</h1>
         <h5 className='title'><Translator path='presentation.title'/></h5>
       </span>
