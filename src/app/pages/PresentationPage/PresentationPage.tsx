@@ -18,7 +18,7 @@ export const PresentationPage = () => {
         variant="circular"
         alt="Marco Antonio"
         src="https://github.com/marcoagpegoraro.png"
-        sx={{ width: 300, height: 300, mt: 10 }}
+        className='avatar'
       />
 
       <span style={{ fontFamily: 'accidental_presidency'}}  >
