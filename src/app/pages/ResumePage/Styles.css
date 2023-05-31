@@ -46,7 +46,7 @@
 .lista-botoes {
     width: 100%;
     max-width: 260px;
-    height: 85vh;
+    min-height: 85vh;
 }
 
 .content {
