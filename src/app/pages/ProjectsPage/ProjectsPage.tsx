@@ -5,12 +5,19 @@ import './Styles.css'
 import { projects } from './Projects';
 import { FlexBreakLine } from '../../components/FlexHelpers';
 import Translator from '../../components/Translator';
+import { useInView } from 'react-intersection-observer';
 
 export const ProjectsPage = () => {
+  const [isAnimatedAlready, setIsAnimatedAlready] = useState(false)
 
+  const { ref, inView, entry } = useInView({});
+  if(inView && !isAnimatedAlready){
+    setIsAnimatedAlready(true)
+  }
 
   return <>
-    <div className='projects-page'>
+    <div id="dummy-div-just-to-use-as-ref-for-animation" ref={ref} className={isAnimatedAlready ? 'hide-after-animation' : 'show-before-animation'} />
+    <div className={`projects-page  ${isAnimatedAlready ? 'animation-swipe-in-bottom-to-top' : 'animation-swipe-out-bottom-to-top'}`}>
       <h1><Translator path={"projects.title"} /></h1>
       <FlexBreakLine />
       {projects.map(project =>

@@ -7,10 +7,7 @@ import { useInView } from 'react-intersection-observer';
 
 export const AboutMePage = () => {
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 0,
-  })
+  const { ref, inView, entry } = useInView({})
 
   const [isAnimatedAlready, setIsAnimatedAlready] = useState(false)
 

@@ -3,3 +3,26 @@
     flex-wrap: wrap;
     justify-content: center;
 }
+
+.animation-swipe-out-bottom-to-top{
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(100%);
+    transition: all 1s;
+}
+
+.animation-swipe-in-bottom-to-top{
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+    transition: all 1s;
+}
+
+.show-before-animation{
+    width: 1px;
+    height: 1px;
+}
+
+.hide-after-animation{
+    display: none;
+}

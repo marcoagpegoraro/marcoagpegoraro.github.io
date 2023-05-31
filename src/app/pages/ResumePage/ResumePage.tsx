@@ -50,10 +50,7 @@ export const ResumePage = () => {
   }
 
 
-  const { ref, inView, entry } = useInView({
-    /* Optional options */
-    threshold: 0,
-  });
+  const { ref, inView, entry } = useInView({});
 
   const [isAnimatedAlready, setIsAnimatedAlready] = useState(false)
 
