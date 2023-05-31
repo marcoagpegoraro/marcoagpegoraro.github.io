@@ -1,18 +1,26 @@
 
-import React from 'react';
+import React, { useState } from 'react';
 import { Avatar, Typography } from '@mui/material';
 import { FlexBreakLine, FlexFillRow } from '../../components/FlexHelpers';
 import Translator from '../../components/Translator';
 import './styles.css'
+import { useInView } from 'react-intersection-observer';
 
 export const AboutMePage = () => {
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  })
+
+  const [isAnimatedAlready, setIsAnimatedAlready] = useState(false)
+
+  if(inView && !isAnimatedAlready){
+    setIsAnimatedAlready(true)
+  }
+
   return <>
-    <div style={{
-       display: 'flex', 
-       alignItems: 'center', 
-       justifyContent: 'space-around', 
-       flexDirection: 'row', 
-       flexWrap: 'wrap' }}>
+    <div ref={ref} className={`about-me-page ${isAnimatedAlready ? 'animation-swipe-in-right-to-left' : 'animation-swipe-out-right-to-left'}`}>
       <Typography className='about-me-text' fontSize={'larger'}>
         <Translator path='aboutMe.message1' stringReplaces={[{ stringToReplace: "%%ANOS%%", replaceTo: `${new Date().getFullYear() - 1999}` }]} />
         <br /><br />

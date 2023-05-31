@@ -4,20 +4,21 @@
     display: flex;
     justify-content: center;
     min-height: 100vh;
+    
 }
 
-.animation-swipe-out{
+.animation-swipe-out-left-to-right{
     opacity: 0;
     filter: blur(5px);
     transform: translateX(-100%);
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
-.animation-swipe-in{
+.animation-swipe-in-left-to-right{
     opacity: 1;
     filter: blur(0);
     transform: translateX(0);
-    transition: all 0.5s;
+    transition: all 1s;
 }
 
 .monitor {

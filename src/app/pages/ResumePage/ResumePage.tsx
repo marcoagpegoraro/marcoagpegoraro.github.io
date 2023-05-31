@@ -55,10 +55,15 @@ export const ResumePage = () => {
     threshold: 0,
   });
 
+  const [isAnimatedAlready, setIsAnimatedAlready] = useState(false)
+
+  if(inView && !isAnimatedAlready){
+    setIsAnimatedAlready(true)
+  }
 
   return <>
     <div ref={ref}  className={`resume-page`}>
-      <div className={`monitor  ${inView ? 'animation-swipe-in' : 'animation-swipe-out'}`}>
+      <div className={`monitor  ${isAnimatedAlready ? 'animation-swipe-in-left-to-right' : 'animation-swipe-out-left-to-right'}`}>
         <div className='window'>
           <div className='titlebar'>
             <Typography marginLeft={1} color={'white'} fontSize={26}>
