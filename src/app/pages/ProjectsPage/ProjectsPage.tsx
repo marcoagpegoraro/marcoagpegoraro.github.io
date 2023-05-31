@@ -14,7 +14,7 @@ export const ProjectsPage = () => {
       <h1><Translator path={"projects.title"} /></h1>
       <FlexBreakLine />
       {projects.map(project =>
-        <Card sx={{ maxWidth: 345, margin: '1%' }} key={project.id} >
+        <Card sx={{ maxWidth: 345, margin: '1%'}} key={project.id} >
           <CardActionArea href={project.link} target='_blank'>
             <CardMedia
               component="img"
@@ -26,10 +26,10 @@ export const ProjectsPage = () => {
               <Typography gutterBottom variant="h5" component="div">
                 <Translator path={project.name} />
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2" >
                 <Translator path={project.description} />
               </Typography>
-              <Typography variant="body2" color="text.secondary">
+              <Typography variant="body2">
                 <Translator path={project.date} />
               </Typography>
             </CardContent>

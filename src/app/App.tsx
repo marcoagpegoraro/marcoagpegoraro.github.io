@@ -30,6 +30,19 @@ function App() {
       createTheme({
         palette: {
           mode,
+          ...(mode === 'light'
+            ? {
+              background: {
+                default: "#F2F2F2",
+              },
+              text: {
+              },
+            }
+            : {
+              background: {
+                default: '#0A1929',
+              },
+            }),
         },
       }),
     [mode],
@@ -40,7 +53,7 @@ function App() {
       <ThemeProvider theme={theme}>
         <CssBaseline />
         <div className="app">
-          <NavBar colorModeContext={ColorModeContext}/>
+          <NavBar colorModeContext={ColorModeContext} />
           <div className='app-content'>
 
             <PresentationPage />
