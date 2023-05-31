@@ -37,7 +37,7 @@ export const resumeItemList: ResumeItem[] = [
       <TechChip label="Kafka" imageUrl="https://upload.wikimedia.org/wikipedia/commons/thumb/0/05/Apache_kafka.svg/1200px-Apache_kafka.svg.png" />,
       <TechChip label="AWS Fargate" imageUrl="https://www.skyarch.net/blog/wp-content/uploads/2019/04/fargate_logo.png" />,
     ],
-    aboutText: ['resume.resumeItems.b2w.aboutText.1'],
+    aboutText: ['resume.resumeItems.b2w.aboutText.1', 'resume.resumeItems.b2w.aboutText.2'],
     type: ResumeItemType.WORK,
     selectedIndex: 1
   },
@@ -49,7 +49,7 @@ export const resumeItemList: ResumeItem[] = [
     chips: [
       <TechChip label="Java" imageUrl="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" />,
       <TechChip label="Spring" imageUrl="https://pluralsight2.imgix.net/paths/images/corespring-f9a00f4516.png" />,
-    ], aboutText: ['resume.resumeItems.ibm.aboutText.1'],
+    ], aboutText: ['resume.resumeItems.ibm.aboutText.1', 'resume.resumeItems.ibm.aboutText.2'],
     type: ResumeItemType.WORK,
     selectedIndex: 2
   },

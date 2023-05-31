@@ -4,7 +4,6 @@ import { Avatar, Box, Card, Paper, Typography } from '@mui/material';
 import './Styles.css'
 import useWindowDimensions from '../../hooks/useWindowDimensions';
 import "react-responsive-carousel/lib/styles/carousel.min.css";
-import { Carousel } from 'react-responsive-carousel';
 import CloseIcon from '@mui/icons-material/Close';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
 import HorizontalRuleIcon from '@mui/icons-material/HorizontalRule';

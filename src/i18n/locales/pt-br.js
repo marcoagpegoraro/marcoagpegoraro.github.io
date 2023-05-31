@@ -22,18 +22,25 @@ export default {
         b2w: {
           date: 'Setembro de 2020 - Junho de 2021',
           aboutText: {
-            "1": `- Uso das linguagens de programação Java 8 e 11 com Spring Cloud e Angular com Typescript para desenvolvimento de produtos internos da companhia.
-            - Apache Kafka. 
-            - Nuvem AWS.`
+            "1": `
+            Trabalhei na parte dos sistemas que enviavam notificações para o cliente, sendo 
+            essas notificações via Email e Whatsapp. Os sistemas eram feitos em Java 11
+            em conjunto com tecnologias como Apache Kafka para envio assíncrono das mensagens
+            e Cloud AWS.`,
+            "2": `Participei também da criação do novo sistemas de envio e parametrizações de 
+            Email feito em Java com Angular.`
           }
         },
         ibm: {
           date: 'Agosto de 2019 - Setembro de 2020',
           aboutText: {
-            "1": `- Outsourcing Itaú Unibanco (One of the largest bank in Latin America)
-            - Java 8, RxJava
-            - Spring Boot, Spring Cloud, Junit 4, Mockito, Fixture
-            - Java instructor for interns`
+            "1": `
+            Programador Java 8 trabalhando na IBM para o projeto do Itaú Unibanco, 
+            participei da manutenção de aplicações
+            que utilizavam chamadas HTTP, muitas vezes essas chamadas precisavam ocorrer ao 
+            mesmo tempo, era utilizado então a biblioteca RxJava.`,
+            "2": `Também ajudei a ensinar Java, programação orientada a objetos
+            para os os novos estagiários do projeto, o que me rendeu uma Badge de educador da IBM `
           }
         },
         timais: {

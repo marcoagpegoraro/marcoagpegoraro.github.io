@@ -1,15 +1,25 @@
 
 import React from 'react';
-import { AppBar, Button, FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup, Toolbar, Typography } from '@mui/material';
+import { AppBar, Button, FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup, Toolbar, Typography, useTheme } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import FacebookIcon from '@mui/icons-material/Facebook';
+import Brightness4Icon, { DarkMode, DarkModeOutlined, LightMode, LightModeOutlined } from '@mui/icons-material';
+import Brightness7Icon from '@mui/icons-material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import InstagramIcon from '@mui/icons-material/Instagram';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import { FlexBreakLine, FlexFillRow } from './FlexHelpers';
 import { useTranslation } from 'react-i18next'
+import { Context } from 'react';
 
-export const NavBar = () => {
+interface props {
+  colorModeContext: Context<any>
+}
+
+export const NavBar = ({ colorModeContext }: props) => {
+  const theme = useTheme();
+  const colorMode = React.useContext(colorModeContext);
+
   const { i18n } = useTranslation()
   const [webSiteLanguage, setWebSiteLanguage] = React.useState<string | undefined>(i18n.language)
 
@@ -17,27 +27,27 @@ export const NavBar = () => {
     setWebSiteLanguage(event.target.value)
     i18n.changeLanguage(event.target.value)
   }
-  
+
   const selectLanguageInput = (id: string) => {
     return <FormControl id={id} sx={{ m: 1, minWidth: 120 }} size="small">
-    <InputLabel id="Language">Language</InputLabel>
-    <Select
-      labelId="Language"
-      id="Language"
-      value={webSiteLanguage}
-      label="Language"
-      onChange={handleLanguageChange}
-    >
-      <MenuItem value={'en-US'}>🇺🇸 English</MenuItem>
-      <MenuItem value={'pt-BR'}>🇧🇷 Português</MenuItem>
-      <MenuItem value={'it-IT'}>🇮🇹 Italiano</MenuItem>
-    </Select>
-  </FormControl>
+      <InputLabel id="Language">Language</InputLabel>
+      <Select
+        labelId="Language"
+        id="Language"
+        value={webSiteLanguage}
+        label="Language"
+        onChange={handleLanguageChange}
+      >
+        <MenuItem value={'en-US'}>🇺🇸 English</MenuItem>
+        <MenuItem value={'pt-BR'}>🇧🇷 Português</MenuItem>
+        <MenuItem value={'it-IT'}>🇮🇹 Italiano</MenuItem>
+      </Select>
+    </FormControl>
   }
 
   return <>
     <header>
-      <AppBar className='nav-bar' position="relative" style={{ background: 'transparent', boxShadow: 'none'}}>
+      <AppBar className='nav-bar' position="relative" style={{ background: 'transparent', boxShadow: 'none' }}>
         <Toolbar style={{ flexWrap: 'wrap' }}>
           <Button href='/' style={{ color: '#15141A' }}>
             <Typography fontSize={'large'} fontWeight={'bold'}>
@@ -47,7 +57,9 @@ export const NavBar = () => {
           <FlexFillRow />
           {selectLanguageInput("select-mobile-screen")}
           <FlexBreakLine className='break-line-mobile-screen' />
-
+          <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
+            {theme.palette.mode === 'dark' ? <LightModeOutlined/> : <DarkModeOutlined />}
+          </IconButton>
           <section className='social-network-buttons'>
 
             <IconButton href="https://www.facebook.com/tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ ml: 2 }} style={{ color: '#3b5998' }}>
@@ -67,7 +79,7 @@ export const NavBar = () => {
               }} src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' />
             </IconButton>
             <IconButton href="https://github.com/marcoagpegoraro" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2, color: 'black' }}>
-              <GitHubIcon/>
+              <GitHubIcon />
             </IconButton>
           </section>
           {selectLanguageInput("select-pc-screen")}
