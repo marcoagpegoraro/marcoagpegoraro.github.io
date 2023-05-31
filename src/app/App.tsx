@@ -9,6 +9,7 @@ import { ProjectsPage } from './pages/ProjectsPage/ProjectsPage';
 import { HobbiesPage } from './pages/HobbiesPage/HobbiesPage';
 import { AboutMePage } from './pages/AboutMePage/AboutMePage';
 import ScrollTop from './components/ScrollTop';
+import { themes } from './config/themes';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -30,19 +31,7 @@ function App() {
       createTheme({
         palette: {
           mode,
-          ...(mode === 'light'
-            ? {
-              background: {
-                default: "#F2F2F2",
-              },
-              text: {
-              },
-            }
-            : {
-              background: {
-                default: '#0A1929',
-              },
-            }),
+          ...(themes(mode)),
         },
       }),
     [mode],

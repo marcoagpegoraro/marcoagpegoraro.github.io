@@ -1,0 +1,24 @@
+
+.select-mobile-screen{
+    display: none !important;
+  }
+  
+  .break-line-mobile-screen{
+    display: none;
+  }
+  
+  
+  @media only screen and (max-width: 570px) {
+    .select-pc-screen {
+        display: none !important;
+    }
+    .select-mobile-screen{
+      display: flex !important;
+    }
+    .social-network-buttons{
+      margin: 0 auto;
+    }
+    .break-line-mobile-screen{
+      display: flex;
+    }
+  }

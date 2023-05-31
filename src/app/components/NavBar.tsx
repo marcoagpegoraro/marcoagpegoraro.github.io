@@ -11,6 +11,7 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import { FlexBreakLine, FlexFillRow } from './FlexHelpers';
 import { useTranslation } from 'react-i18next'
 import { Context } from 'react';
+import './NavBar.css'
 
 interface props {
   colorModeContext: Context<any>

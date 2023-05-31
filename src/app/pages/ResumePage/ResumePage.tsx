@@ -20,6 +20,7 @@ import { FlexBreakLine, FlexFillRow } from '../../components/FlexHelpers';
 import Translator from '../../components/Translator';
 import { TextField } from '@mui/material';
 import { useTranslation } from 'react-i18next'
+import { useInView } from 'react-intersection-observer';
 
 export const ResumePage = () => {
   const fireworksRef = useRef<FireworksHandlers>(null)
@@ -48,9 +49,16 @@ export const ResumePage = () => {
     setSelectedIndex(index);
   }
 
+
+  const { ref, inView, entry } = useInView({
+    /* Optional options */
+    threshold: 0,
+  });
+
+
   return <>
-    <div className='resume-page'>
-      <div className='monitor'>
+    <div ref={ref}  className={`resume-page`}>
+      <div className={`monitor  ${inView ? 'animation-swipe-in' : 'animation-swipe-out'}`}>
         <div className='window'>
           <div className='titlebar'>
             <Typography marginLeft={1} color={'white'} fontSize={26}>

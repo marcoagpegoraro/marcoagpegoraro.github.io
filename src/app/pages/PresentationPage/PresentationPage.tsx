@@ -7,17 +7,11 @@ import './styles.css'
 
 export const PresentationPage = () => {
   return <>
-    <div style={{
-      display: 'flex',
-      alignItems: 'center',
-      flexDirection: 'column',
-      height: 'calc(100vh)',
-      flexWrap: 'wrap'
-    }}>
+    <div className='presentation-page'>
       <Avatar
         variant="circular"
         alt="Marco Antonio"
-        src="https://github.com/marcoagpegoraro.png"
+        src="./logo512.png"
         className='avatar'
       />
 
