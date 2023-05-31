@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { AppBar, Button, FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup, Toolbar, Typography, useTheme } from '@mui/material';
+import { AppBar, Box, Button, FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup, Toolbar, Typography, useTheme } from '@mui/material';
 import HomeIcon from '@mui/icons-material/Home';
 import FacebookIcon from '@mui/icons-material/Facebook';
 import Brightness4Icon, { DarkMode, DarkModeOutlined, LightMode, LightModeOutlined } from '@mui/icons-material';
@@ -28,8 +28,8 @@ export const NavBar = ({ colorModeContext }: props) => {
     i18n.changeLanguage(event.target.value)
   }
 
-  const selectLanguageInput = (id: string) => {
-    return <FormControl id={id} sx={{ m: 1, minWidth: 120 }} size="small">
+  const selectLanguageInput = (className: string) => {
+    return <FormControl className={className} sx={{ m: 1, minWidth: 120 }} size="small">
       <InputLabel id="Language">Language</InputLabel>
       <Select
         labelId="Language"
@@ -45,44 +45,55 @@ export const NavBar = ({ colorModeContext }: props) => {
     </FormControl>
   }
 
+  const toggleDarkModeButton = (className: string) => {
+    return <Box className={className} sx={{ bgcolor: 'background.default', color: 'text.primary', }}>
+      <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
+        {theme.palette.mode === 'dark' ? <LightModeOutlined /> : <DarkModeOutlined />}
+      </IconButton>
+    </Box>
+  }
+
+
+
   return <>
     <header>
       <AppBar className='nav-bar' position="relative" style={{ background: 'transparent', boxShadow: 'none' }}>
         <Toolbar style={{ flexWrap: 'wrap' }}>
           <Button href='/' style={{ color: '#15141A' }}>
-            <Typography fontSize={'large'} fontWeight={'bold'}>
+            <Typography fontSize={'large'} fontWeight={'bold'} sx={{ color: 'text.primary', }}>
               M&nbsp;P
             </Typography>
           </Button>
           <FlexFillRow />
           {selectLanguageInput("select-mobile-screen")}
+          {toggleDarkModeButton("select-mobile-screen")}
           <FlexBreakLine className='break-line-mobile-screen' />
-          <IconButton sx={{ ml: 1 }} onClick={colorMode.toggleColorMode} color="inherit">
-            {theme.palette.mode === 'dark' ? <LightModeOutlined/> : <DarkModeOutlined />}
-          </IconButton>
           <section className='social-network-buttons'>
 
-            <IconButton href="https://www.facebook.com/tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ ml: 2 }} style={{ color: '#3b5998' }}>
-              <FacebookIcon></FacebookIcon>
+            <IconButton href="https://www.facebook.com/tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ ml: 2 }} >
+              <FacebookIcon sx={{ color: "#3b5998", backgroundColor: "white", borderRadius: 1}}></FacebookIcon>
             </IconButton>
-            <IconButton href="https://www.linkedin.com/in/marco-antonio-goncalves/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#0e76a8' }}>
-              <LinkedInIcon></LinkedInIcon>
+            <IconButton href="https://www.linkedin.com/in/marco-antonio-goncalves/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" >
+              <LinkedInIcon sx={{ color: "#0e76a8", backgroundColor: "white", borderRadius: 1}}></LinkedInIcon>
             </IconButton>
-            <IconButton href="https://www.instagram.com/marcoantonio.png/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
-              <InstagramIcon></InstagramIcon>
+            <IconButton href="https://www.instagram.com/marcoantonio.png/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" >
+              <InstagramIcon sx={{ color: "#DD2A7B", backgroundColor: "white", borderRadius: 1}}/>
             </IconButton>
             <IconButton href="https://medium.com/@tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
               <img style={{
-                width: 20,
-                height: 20,
+                width: 24,
+                height: 24,
                 padding: 2,
+                backgroundColor: "white", borderRadius: 1
+                
               }} src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' />
             </IconButton>
-            <IconButton href="https://github.com/marcoagpegoraro" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2, color: 'black' }}>
+            <IconButton href="https://github.com/marcoagpegoraro" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2, color: 'text.primary' }}>
               <GitHubIcon />
             </IconButton>
           </section>
           {selectLanguageInput("select-pc-screen")}
+          {toggleDarkModeButton("select-pc-screen")}
         </Toolbar>
       </AppBar>
     </header>

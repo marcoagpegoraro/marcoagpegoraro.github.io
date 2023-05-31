@@ -51,7 +51,7 @@
 
 .content {
     width: calc(100% - 260px);
-    background-image: url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000");
+    /* background-image: url("https://img.freepik.com/free-photo/design-space-paper-textured-background_53876-42312.jpg?w=2000"); */
 }
 
 .inner-content {
