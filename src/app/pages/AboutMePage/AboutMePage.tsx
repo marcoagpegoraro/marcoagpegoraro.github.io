@@ -1,9 +1,8 @@
 
 import React, { useState } from 'react';
-import { Avatar, Typography } from '@mui/material';
-import { FlexBreakLine, FlexFillRow } from '../../components/FlexHelpers';
+import { Typography } from '@mui/material';
 import Translator from '../../components/Translator';
-import './styles.css'
+import './styles.css';
 import { useInView } from 'react-intersection-observer';
 
 export const AboutMePage = () => {
