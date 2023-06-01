@@ -85,7 +85,7 @@ export default {
           name: "Etec Americana",
           date: 'Janeiro de 2014 - Dezembro de 2016',
           aboutText: {
-            "1":`
+            "1": `
             Foi onde fiz meu ensino médio junto ao curso de técnico de informática, foi aqui que tive
             o primeiro contato com programação e desde sempre soube que era isso que queria trabalhar 
             no futuro, fiz amigos que tenho até hoje e tenho muito orgulho de ter estudado aqui. 
