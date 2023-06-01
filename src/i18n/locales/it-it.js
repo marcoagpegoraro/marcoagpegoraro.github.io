@@ -12,6 +12,7 @@ export default {
       windowText: `Il mio curriculum`,
       myProfessionalExperiences: `Le mie esperienze professionali`,
       myEducation: `La mia educazione`,
+      chooseAnotherCompany: `Scegli un'altra compagnia:`,
       resumeItems: {
         itau: {
           name: "Itaú Unibanca",

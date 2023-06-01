@@ -12,6 +12,7 @@ export default {
       windowText: `My resume`,
       myProfessionalExperiences: `My professional experiences`,
       myEducation: `My education`,
+      chooseAnotherCompany: `Choose another company:`,
       resumeItems: {
         itau: {
           name: "Itaú Unibank",
