@@ -1,7 +1,7 @@
 export default {
   translations: {
     presentation: {
-      title: `Desenvolvedor de software Fullstack`
+      title: `Desenvolvedor de software Fullstack | AWS | Java | JavaScript`
     },
     aboutMe: {
       message1: `Olá, seja bem vindo ao meu site pessoal 🙋‍♂️, meu nome é Marco, tenho %%ANOS%% anos, trabalho atualmente como desenvolvedor de software para o Itaú Unibanco, o maior banco da america latina, começei a aprender programação desde 2014 quando entrei no ensino médio e sempre estou procurando aprender novas tecnologias.`,
@@ -14,6 +14,7 @@ export default {
       myEducation: `Meus estudos`,
       resumeItems: {
         itau: {
+          name: "Itaú Unibanco",
           date: 'Junho de 2021 - Atual',
           aboutText: {
             "1": `Entrei no Itaú como desenvolvedor Java 11 focado bastante em projetos 
@@ -25,6 +26,7 @@ export default {
           }
         },
         b2w: {
+          name: "B2W Digital",
           date: 'Setembro de 2020 - Junho de 2021',
           aboutText: {
             "1": `
@@ -37,6 +39,7 @@ export default {
           }
         },
         ibm: {
+          name: "IBM Brasil",
           date: 'Agosto de 2019 - Setembro de 2020',
           aboutText: {
             "1": `
@@ -49,6 +52,7 @@ export default {
           }
         },
         timais: {
+          name: "TI+ Soluções",
           date: 'Julho de 2018 - Agosto de 2019',
           aboutText: {
             "1": `
@@ -65,6 +69,7 @@ export default {
           }
         },
         fatec: {
+          name: "Fatec Americana",
           date: 'Janeiro de 2017 - Junho de 2020',
           aboutText: {
             "1": `
@@ -72,10 +77,12 @@ export default {
             protocolos do modelo OSI como Ethernet, IPV4, IPV6, DHCP, ARP, TCP, UDP, etc. 
             assim como implementar regras de sub-redes, firewall com o objetivo de garantir
             uma rede segura. Aprendizado sobre o sistema operacional Linux.`,
-            "2": `Meu TCC foi um trabalho que fiz com um amigo sobre `
+            "2": `Fiz meu TCC com um amigo a respeito de um sistema que roda o algoritmo de 
+            Naive Bayes para identificar emails que são phishings ou não.`
           }
         },
         etec: {
+          name: "Etec Americana",
           date: 'Janeiro de 2014 - Dezembro de 2016',
           aboutText: {
             "1":`

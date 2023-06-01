@@ -97,7 +97,7 @@ export const ResumePage = () => {
                       <ListItemIcon>
                         {resumeItem.icon}
                       </ListItemIcon>
-                      <ListItemText primary={resumeItem.name} />
+                      <ListItemText primary={t(resumeItem.name)} />
                     </ListItemButton>
                   </ListItem>
                 )}
@@ -121,7 +121,7 @@ export const ResumePage = () => {
                       <ListItemIcon>
                         {resumeItem.icon}
                       </ListItemIcon>
-                      <ListItemText primary={resumeItem.name} />
+                      <ListItemText primary={t(resumeItem.name)} />
                     </ListItemButton>
                   </ListItem>
                 )}

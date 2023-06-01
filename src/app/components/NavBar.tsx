@@ -81,13 +81,8 @@ export const NavBar = ({ colorModeContext }: props) => {
               <InstagramIcon className='social-network-white-background' sx={{ color: "#DD2A7B" }} />
             </IconButton>
             <IconButton href="https://medium.com/@tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
-              <img style={{
-                width: 24,
-                height: 24,
-                padding: 2,
-                 borderRadius: 1
-
-              }} src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' />
+              <img style={{ width: 24, height: 24, padding: 2, borderRadius: 7 }}
+                src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' />
             </IconButton>
             <IconButton href="https://github.com/marcoagpegoraro" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2, color: 'text.primary' }}>
               <GitHubIcon />
