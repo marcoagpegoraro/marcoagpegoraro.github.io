@@ -72,21 +72,21 @@ export const NavBar = ({ colorModeContext }: props) => {
           <section className='social-network-buttons'>
 
             <IconButton href="https://www.facebook.com/tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ ml: 2 }} >
-              <FacebookIcon sx={{ color: "#3b5998", backgroundColor: "white", borderRadius: 1}}></FacebookIcon>
+              <FacebookIcon className='social-network-white-background' sx={{ color: "#3b5998", backgroundSize: '15px 17.3px' }}></FacebookIcon>
             </IconButton>
             <IconButton href="https://www.linkedin.com/in/marco-antonio-goncalves/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" >
-              <LinkedInIcon sx={{ color: "#0e76a8", backgroundColor: "white", borderRadius: 1}}></LinkedInIcon>
+              <LinkedInIcon className='social-network-white-background' sx={{ color: "#0e76a8" }}></LinkedInIcon>
             </IconButton>
             <IconButton href="https://www.instagram.com/marcoantonio.png/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" >
-              <InstagramIcon sx={{ color: "#DD2A7B", backgroundColor: "white", borderRadius: 1}}/>
+              <InstagramIcon className='social-network-white-background' sx={{ color: "#DD2A7B" }} />
             </IconButton>
             <IconButton href="https://medium.com/@tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" style={{ color: '#DD2A7B' }}>
               <img style={{
                 width: 24,
                 height: 24,
                 padding: 2,
-                backgroundColor: "white", borderRadius: 1
-                
+                 borderRadius: 1
+
               }} src='https://miro.medium.com/v2/resize:fill:176:176/1*sHhtYhaCe2Uc3IU0IgKwIQ.png' />
             </IconButton>
             <IconButton href="https://github.com/marcoagpegoraro" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2, color: 'text.primary' }}>
