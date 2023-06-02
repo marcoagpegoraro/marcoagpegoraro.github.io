@@ -1,6 +1,6 @@
 
 import React, { useEffect, useRef, useState } from 'react';
-import { Box, ListSubheader, Typography } from '@mui/material';
+import { Box, InputAdornment, ListSubheader, Typography } from '@mui/material';
 import './Styles.css'
 import CloseIcon from '@mui/icons-material/Close';
 import CheckBoxOutlineBlankIcon from '@mui/icons-material/CheckBoxOutlineBlank';
@@ -21,6 +21,7 @@ import Translator from '../../components/Translator';
 import { TextField } from '@mui/material';
 import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer';
+import { CalendarMonth } from '@mui/icons-material';
 
 export const ResumePage = () => {
   const fireworksRef = useRef<FireworksHandlers>(null)
@@ -54,12 +55,12 @@ export const ResumePage = () => {
 
   const [isAnimatedAlready, setIsAnimatedAlready] = useState(false)
 
-  if(inView && !isAnimatedAlready){
+  if (inView && !isAnimatedAlready) {
     setIsAnimatedAlready(true)
   }
 
   return <>
-    <div ref={ref}  className={`resume-page`}>
+    <div ref={ref} className={`resume-page`}>
       <div className={`monitor  ${isAnimatedAlready ? 'animation-swipe-in-left-to-right' : 'animation-swipe-out-left-to-right'}`}>
         <div className='window'>
           <div className='titlebar'>
@@ -67,13 +68,13 @@ export const ResumePage = () => {
               <Translator path='resume.windowText'></Translator>
             </Typography>
             <FlexFillRow />
-            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10, color: 'black'  }} /></Box>
-            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3, color: 'black'  }} /></Box>
-            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3, color: 'black'  }} /></Box>
+            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><HorizontalRuleIcon style={{ 'fontSize': '1.5rem', marginTop: 10, color: 'black' }} /></Box>
+            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C2C6CA', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CheckBoxOutlineBlankIcon style={{ 'fontSize': '1.5rem', marginTop: 3, color: 'black' }} /></Box>
+            <Box onClick={() => activeFireworksEasterEgg()} width={30} height={30} style={{ backgroundColor: '#C64830', marginRight: 4, marginTop: 4, cursor: 'pointer' }}><CloseIcon style={{ 'fontSize': '1.5rem', marginTop: 3, color: 'black' }} /></Box>
           </div>
           <div className='second-titlebar'>
-            <Typography sx={{ margin: '6px 4px 0 8px', color: 'black' }}><Translator path='resume.chooseAnotherCompany'/></Typography>
-            <select style={{ backgroundColor: '#008080', cursor: 'pointer', border: 'none', textAlign: 'center', fontWeight: 'bold', marginTop: 4,height: '30px',maxWidth: '140px' }} onChange={(event) => setSelectedIndex(+(event.target.value))} value={selectedIndex}>
+            <Typography sx={{ margin: '6px 4px 0 8px', color: 'black' }}><Translator path='resume.chooseAnotherCompany' /></Typography>
+            <select style={{ backgroundColor: '#008080', cursor: 'pointer', border: 'none', textAlign: 'center', fontWeight: 'bold', marginTop: 4, height: '30px', maxWidth: '140px' }} onChange={(event) => setSelectedIndex(+(event.target.value))} value={selectedIndex}>
               {resumeItemList.map(resumeItem =>
                 <option key={t(resumeItem.name)} value={resumeItem.selectedIndex}>{t(resumeItem.name)}</option>
               )}
@@ -135,9 +136,22 @@ export const ResumePage = () => {
                 {resumeItem.chips ? <><br /><br /></> : ''}
                 {resumeItem.chips?.map((chip, index) => <span key={index}>{chip}</span>)}
                 <br /><br />
-                <Translator path={resumeItem.date}/>
+                <TextField
+                  label={t("commonWords.period")}
+                  defaultValue={t(resumeItem.date)}
+                  InputProps={{
+                    readOnly: true,
+                    startAdornment: (
+                      <InputAdornment position="start">
+                        <CalendarMonth />
+                      </InputAdornment>
+                    ),
+                    inputProps: {
+                      style: { textAlign: "center", width: '267px' },
+                    }
+                  }} />
                 <br /><br />
-                {resumeItem.aboutText.map((paragraph, index) => <span key={index}><Translator path={paragraph}/><br/><br/></span>)}
+                {resumeItem.aboutText.map((paragraph, index) => <span key={index}><Translator path={paragraph} /><br /><br /></span>)}
               </section>
             )}
           </Box>

@@ -1,5 +1,10 @@
 export default {
   translations: {
+    commonWords: {
+      period: "Period",
+      contactMe: "Contact Me",
+      message: "Message"      
+    },
     presentation: {
       title: `Fullstack Software Developer | AWS | Java | JavaScript`
     },

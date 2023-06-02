@@ -1,0 +1,10 @@
+.contact-me-page {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    align-content: baseline;
+    justify-content: space-around;
+    height: 100vh;
+    flex-wrap: wrap;
+    padding-top: 120px;
+}
