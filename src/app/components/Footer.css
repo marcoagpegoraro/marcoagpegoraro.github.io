@@ -1,0 +1,17 @@
+.footer {
+  background-color: #121212;
+  width: 100vw;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+a{
+  color: white;
+}
+
+.github-icon{
+  color: white;
+
+}

@@ -3,7 +3,7 @@ export default {
     commonWords: {
       period: "Período",
       contactMe: "Me contate",
-      message: "Mensagem"      
+      message: "Mensagem",
     },
     presentation: {
       title: `Desenvolvedor de software Fullstack | AWS | Java | JavaScript`
@@ -156,6 +156,23 @@ export default {
         description: "Udacity Nanodegree Program Graduate",
         date: "25/11/2018",
       }
+    },
+    footer: {
+      followMeOnSocialNetworks: "Me siga nas redes sociais:",
+      text: `
+      Esse site foi programado utilizando as mais modernas tecnologias de desenvolvimento web,
+        como <a href='https://react.dev' target='_blank'>ReactJS</a> e <a href='https://www.typescriptlang.org/' target='_blank'>Typescript</a> junto 
+         
+         com as praticas recomendadas de componentização,
+        internacionalização com a biblioteca <a href='https://www.i18next.com/' target='_blank'>i18n</a>, 
+        animações com CSS e <a href='https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API' target='_blank'>intersection observer</a>
+        , alem da biblioteca de componentes <a href='https://mui.com/' target='_blank'>Material UI</a>.
+        <br/><br/>
+        Feito com ❤️ por mim mesmo, hosteado no meu <a href='https://pages.github.com/' target='_blank'>GitHub Pages</a> e 
+        dominio registrado no <a href='https://registro.br/' target='_blank'>registro.br</a>, fique
+         a vontade para ver o código do site <a href='https://github.com/marcoagpegoraro/marcoagpegoraro.github.io' target='_blank'>clicando neste link</a>.
+        <br/><br/>
+      `
     }
   }
 }
