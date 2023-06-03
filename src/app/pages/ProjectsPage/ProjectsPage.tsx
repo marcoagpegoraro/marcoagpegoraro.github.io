@@ -10,13 +10,17 @@ import { useInView } from 'react-intersection-observer';
 export const ProjectsPage = () => {
   const [isAnimatedAlready, setIsAnimatedAlready] = useState(false)
 
-  const { ref, inView, entry } = useInView({});
-  if(inView && !isAnimatedAlready){
+  const [ refDivTop, inViewDivTop, entryDivTop ] = useInView({});
+  const [ refDivBottom, inViewDivBottom, entryDivBottom ] = useInView({});
+  if(inViewDivTop && !isAnimatedAlready){
     setIsAnimatedAlready(true)
+  }
+  else if(inViewDivBottom && !isAnimatedAlready){
+    setIsAnimatedAlready(true)  
   }
 
   return <>
-    <div id="dummy-div-just-to-use-as-ref-for-animation" ref={ref} className={isAnimatedAlready ? 'hide-after-animation' : 'show-before-animation'} />
+    <div id="dummy-top-div-just-to-use-as-ref-for-animation" ref={refDivTop} className={isAnimatedAlready ? 'hide-after-animation' : 'show-before-animation'} />
     <div className={`projects-page  ${isAnimatedAlready ? 'animation-swipe-in-bottom-to-top' : 'animation-swipe-out-bottom-to-top'}`}>
       <h1><Translator path={"projects.title"} /></h1>
       <FlexBreakLine />
@@ -45,5 +49,6 @@ export const ProjectsPage = () => {
 
       )}
     </div>
+    <div id="dummy-bottom-div-just-to-use-as-ref-for-animation" ref={refDivBottom} className={isAnimatedAlready ? 'hide-after-animation' : 'show-before-animation'} />
   </>
 }
