@@ -139,6 +139,7 @@ export const ResumePage = () => {
                 <TextField
                   label={t("commonWords.period")}
                   defaultValue={t(resumeItem.date)}
+                  multiline
                   InputProps={{
                     readOnly: true,
                     startAdornment: (
@@ -147,7 +148,8 @@ export const ResumePage = () => {
                       </InputAdornment>
                     ),
                     inputProps: {
-                      style: { textAlign: "center", width: '267px' },
+                      textOverflow: 'ellipsis',
+                      style: { textAlign: "center" },
                     }
                   }} />
                 <br /><br />
