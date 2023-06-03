@@ -24,7 +24,7 @@ export const AboutMePage = () => {
         <br /><br />
         <Translator path='aboutMe.message3' />
       </Typography>
-      <img className='marco-presenting' src='./marco-presenting.png'></img>
+      <img className='marco-presenting' src='./presenting-page/marco-presenting.png'></img>
     </div>
     <div className='space-text-next-page'/>
   </>

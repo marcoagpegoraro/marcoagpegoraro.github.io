@@ -7,7 +7,7 @@ export const resumeItemList: ResumeItem[] = [
   {
     name: "resume.resumeItems.itau.name",
     icon: <AccountBalance />,
-    imageUrl: './itau-logo.png',
+    imageUrl: './resume-page/itau-logo.png',
     date: 'resume.resumeItems.itau.date',
     chips: [
       <TechChip label="Java" imageUrl="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" />,
@@ -30,7 +30,7 @@ export const resumeItemList: ResumeItem[] = [
   {
     name: "resume.resumeItems.b2w.name",
     icon: <StorefrontOutlined />,
-    imageUrl: './americanas-sa-logo.png',
+    imageUrl: './resume-page/americanas-sa-logo.png',
     date: 'resume.resumeItems.b2w.date',
     chips: [
       <TechChip label="Java" imageUrl="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" />,
@@ -46,7 +46,7 @@ export const resumeItemList: ResumeItem[] = [
   {
     name: "resume.resumeItems.ibm.name",
     icon: <Computer />,
-    imageUrl: './ibm-logo.png',
+    imageUrl: './resume-page/ibm-logo.png',
     date: 'resume.resumeItems.ibm.date',
     chips: [
       <TechChip label="Java" imageUrl="https://upload.wikimedia.org/wikipedia/en/thumb/3/30/Java_programming_language_logo.svg/1200px-Java_programming_language_logo.svg.png" />,
@@ -58,7 +58,7 @@ export const resumeItemList: ResumeItem[] = [
   {
     name: "resume.resumeItems.timais.name",
     icon: <TipsAndUpdates />,
-    imageUrl: './timais-logo.png',
+    imageUrl: './resume-page/timais-logo.png',
     date: 'resume.resumeItems.timais.date',
     chips: [
       <TechChip label="C#" imageUrl="https://growiz.com.br/wp-content/uploads/2020/08/kisspng-c-programming-language-logo-microsoft-visual-stud-atlas-portfolio-5b899192d7c600.1628571115357423548838.png" />,
