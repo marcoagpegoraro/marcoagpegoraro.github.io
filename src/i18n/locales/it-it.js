@@ -3,7 +3,7 @@ export default {
     commonWords: {
       period: "Periodo",
       contactMe: "Contattami",
-      message: "Messaggio",
+      message: "Messaggio"
     },
     presentation: {
       title: `Sviluppatore software fullstack | AWS | Java | JavaScript`
