@@ -9,7 +9,7 @@ export default {
       title: `Desenvolvedor de software Fullstack | AWS | Java | JavaScript`
     },
     aboutMe: {
-      message1: `Olá, seja bem vindo ao meu site pessoal 🙋‍♂️, meu nome é Marco, tenho %%ANOS%% anos, trabalho atualmente como desenvolvedor de software para o Itaú Unibanco, o maior banco da america latina, começei a aprender programação desde 2014 quando entrei no ensino médio e sempre estou procurando aprender novas tecnologias.`,
+      message1: `Olá, seja bem vindo ao meu site pessoal 🙋‍♂️, meu nome é Marco, tenho %%ANOS%% anos, trabalho atualmente como desenvolvedor de software para o Itaú Unibanco, começei a aprender programação desde 2014 quando entrei no ensino médio e sempre estou procurando aprender novas tecnologias.`,
       message2: `Hoje no trabalho, atuo principalmente na parte de modernização utilizando Java junto com as tecnologias de Kafka e mensageria, tenho conhecimento basico em Terraform e sou certificado AWS Cloud Practitioner, mas também tenho conhecimento com as linguagens C#, PHP, Dart com Flutter para criação de Apps Mobile e JavaScript, essa ultima na qual é a linguagem padrão que utilizo para a criação de projetos pessoais, junto com o framework Next.js`,
       message3: `Meus principais hobbies são carros 🚗, musica 🎵, relogios ⌚ e tecnologias antigas, como computadores 💾 ou videogames 🎮 da decada de 90 e 00, acho fascinante pesquisar sobre a história das coisas e ver como elas evoluiram até se tornar o que é hoje. atuamente tenho um Honda Accord 1993 Wagon no qual eu e minha namorada somos muito apegados. Tenho ingles avançado e atualmente estou em processo de aprendizado da lingua italiana.`,
     },
