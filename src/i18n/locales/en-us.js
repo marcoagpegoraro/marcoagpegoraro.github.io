@@ -67,7 +67,7 @@ export default {
                with the Ionic framework, that's when I gained great knowledge in TypeScript.
                I also had the opportunity
               to program in the 4GL language, which is a language used by the company TOTVS in the
-              ERP(Enterprise Resource Planning) system Logix, is a language very similar to database procedures but with
+              ERP(Enterprise Resource Planning) system Logix, it is a language very similar to database procedures but with
               the addition of methods for screen creation.`,
             "2": `It was my first job as a programmer! I am very grateful for everything I learned at TI+.
               I will always remember the good times we had together.
