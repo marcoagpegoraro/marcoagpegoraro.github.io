@@ -9,6 +9,7 @@ import { AboutMePage } from './pages/AboutMePage/AboutMePage';
 import ScrollTop from './components/ScrollTop';
 import { themes } from './config/themes';
 import { ContactMePage } from './pages/ContactMePage/ContactMePage';
+import { Footer } from './components/Footer';
 
 const ColorModeContext = React.createContext({ toggleColorMode: () => { } });
 
@@ -50,6 +51,7 @@ function App() {
             <ContactMePage/>
             <ScrollTop />
           </div>
+          <Footer />
         </div>
       </ThemeProvider>
     </ColorModeContext.Provider>
