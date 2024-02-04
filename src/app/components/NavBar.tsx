@@ -1,13 +1,7 @@
 
 import React from 'react';
 import { AppBar, Box, Button, FormControl, IconButton, InputLabel, MenuItem, Select, SelectChangeEvent, ToggleButton, ToggleButtonGroup, Toolbar, Typography, useTheme } from '@mui/material';
-import HomeIcon from '@mui/icons-material/Home';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import Brightness4Icon, { DarkMode, DarkModeOutlined, LightMode, LightModeOutlined } from '@mui/icons-material';
-import Brightness7Icon from '@mui/icons-material';
-import Link from '@mui/icons-material/Link';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import GitHubIcon from '@mui/icons-material/GitHub';
+import { DarkModeOutlined, LightModeOutlined } from '@mui/icons-material';
 import { FlexBreakLine, FlexFillRow } from './FlexHelpers';
 import { useTranslation } from 'react-i18next'
 import { Context } from 'react';
@@ -67,7 +61,6 @@ export const NavBar = ({ colorModeContext }: props) => {
             </Typography>
           </Button>
           <FlexFillRow />
-          <Button variant="outlined" href='https://www.marcoagpegoraro.com.br' target='_blank' endIcon={<Link />}>Blog</Button>
           {selectLanguageInput("select-mobile-screen")}
           {toggleDarkModeButton("select-mobile-screen")}
           <FlexBreakLine className='break-line-mobile-screen' />
