@@ -41,9 +41,6 @@ export const ContactMePage = () => {
             />
           </Grid>
           <Grid item xs={12} >
-            <Button startIcon={<WhatsApp />} href={`https://wa.me/5519981277715?text=${message}`} target='_blank' variant="contained" color="success" sx={{ mb: 2, mr: 2 }}>
-              WhatsApp
-            </Button>
             <Button startIcon={<MailOutline />} href={`mailto:marco.ag.pegoraro@hotmail.com?&body=${message}`} target='_blank' variant="contained" sx={{ mb: 2 }}>
               E-mail
             </Button>
