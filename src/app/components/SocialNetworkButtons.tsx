@@ -26,6 +26,6 @@ export const SocialNetworkButtons = () => {
     <IconButton href="https://github.com/marcoagpegoraro" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ mr: 2, color: 'text.primary' }}>
       <GitHubIcon className='github-icon' />
     </IconButton>
-    <Button variant="outlined" href='https://www.marcoagpegoraro.com.br' target='_blank' endIcon={<Link />}>Blog</Button>
+    <Button variant="outlined" href='https://pegoraro.dev' target='_blank' endIcon={<Link />}>Blog</Button>
   </>
 }

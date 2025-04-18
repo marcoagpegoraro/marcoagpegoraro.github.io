@@ -1,5 +1,5 @@
 # My personal Website, created with React
-## You can access this website by typing in your address bar the following address: https://marcoagpegoraro.com.br or https://marcoagpegoraro.github.io
+## You can access this website by typing in your address bar the following address: https://pegoraro.dev
 
 Fell free to clone this repository and see how i programmed the website.
 
