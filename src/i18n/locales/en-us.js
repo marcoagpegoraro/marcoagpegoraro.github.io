@@ -24,7 +24,7 @@ export default {
           date: 'June 2021 - Current',
           aboutText: {
             "1": `
-              I joined Itaú as a software engineer responsible for developing solutions for data integration between teams using Java with EMR and Kafka, all using the AWS cloud environment.`
+              I joined Itaú — the largest bank in Latin America — as a Software Engineer responsible for developing solutions for data integration between teams using Java with EMR and Kafka, all using the AWS cloud environment.`
             ,"2":`
               I was then assigned to the team responsible for registering credit operations, where I still work today. My day to day routine is to maintain existing systems and also work on creating new systems and flows.
             `,"3": `
