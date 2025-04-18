@@ -137,9 +137,7 @@ export const ResumePage = () => {
                   className='resume-logo'
                   alt={resumeItem.name}
                   height={100}
-                  src={resumeItem.imageUrl} 
-                  // width={100}
-                   />
+                  src={resumeItem.imageUrl}/>
                 {resumeItem.chips ? <><br /><br /></> : ''}
                 {resumeItem.chips?.map((chip, index) => <span key={index}>{chip}</span>)}
                 <br /><br />

@@ -98,8 +98,17 @@ export default {
               I learned the concepts of programming language with C, object-oriented programming,
               formatting computers, networks, HTML and basic android with java.`
           }
+        },
+        fiap: {
+          name: "FIAP",
+          date: 'September 2024 - September 2025',
+          aboutText: {
+            "1": `
+              MBA in solution architecture focused on problem-solving and practical activities
+              related to the different types of architecture according to the TOGAF 9.2 framework, in addition to the business
+              architecture present in TOGAF 10.`
+          }
         }
-
       }
     },
     projects: {

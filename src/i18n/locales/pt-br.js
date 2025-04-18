@@ -75,7 +75,7 @@ export default {
           }
         },
         fatec: {
-          name: "Fatec Americana",
+          name: "FATEC Americana",
           date: 'Janeiro de 2017 - Junho de 2020',
           aboutText: {
             "1": `
@@ -88,7 +88,7 @@ export default {
           }
         },
         etec: {
-          name: "Etec Americana",
+          name: "ETEC Americana",
           date: 'Janeiro de 2014 - Dezembro de 2016',
           aboutText: {
             "1": `
@@ -98,8 +98,17 @@ export default {
             Aprendi os conceitos de Linguagem de programação com C, programação orientada a objetos, 
             formatação de computadores, redes, HTML e android básico com java.`
           }
+        },
+        fiap: {
+          name: "Faculdade de Informática e Administração Paulista (FIAP)",
+          date: 'Setembro de 2024 - Setembro de 2025',
+          aboutText: {
+            "1": `
+            MBA de arquitetura de soluções focado em resolução de problemas e atividades práticas 
+            referente aos diversos tipos de arquitetura segundo o framework TOGAF 9.2, alem da arquitetura
+            de negócios presente no TOGAF 10.`
+          }
         }
-
       }
     },
     projects: {

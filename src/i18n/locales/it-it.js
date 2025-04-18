@@ -98,8 +98,17 @@ export default {
             ho appreso i concetti del linguaggio di programmazione con C, programmazione orientata agli oggetti,
             formattazione di computer, reti, HTML e Android di base con java.`
           }
+        },
+        fiap: {
+          name: "Facoltà di Informatica e Amministrazione di San Paolo (FIAP)",
+          date: 'Settembre 2024 - Settembre 2025',
+          aboutText: {
+            "1": `
+            MBA in architettura delle soluzioni focalizzato sulla risoluzione dei problemi e sulle attività pratiche 
+            riferendosi a diversi tipi di architettura secondo il framework TOGAF 9.2, oltre all'architettura
+            le aziende si presentano in TOGAF 10.`
+          }
         }
-
       }
     },
     projects: {

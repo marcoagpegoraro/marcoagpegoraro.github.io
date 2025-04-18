@@ -73,13 +73,22 @@ export const resumeItemList: ResumeItem[] = [
     selectedIndex: 3
   },
   {
+    name: "resume.resumeItems.fiap.name",
+    icon: <SchoolOutlined />,
+    imageUrl: './resume-page/fiap.jpg',
+    date: 'resume.resumeItems.fiap.date',
+    aboutText: ['resume.resumeItems.fiap.aboutText.1'],
+    type: ResumeItemType.STUDY,
+    selectedIndex: 4
+  },
+  {
     name: "resume.resumeItems.fatec.name",
     icon: <School />,
     imageUrl: './resume-page/fatec.png',
     date: 'resume.resumeItems.fatec.date',
     aboutText: ['resume.resumeItems.fatec.aboutText.1', 'resume.resumeItems.fatec.aboutText.2'],
     type: ResumeItemType.STUDY,
-    selectedIndex: 4
+    selectedIndex: 5
   },
   {
     name: "resume.resumeItems.etec.name",
@@ -88,6 +97,6 @@ export const resumeItemList: ResumeItem[] = [
     date: 'resume.resumeItems.etec.date',
     aboutText: ['resume.resumeItems.etec.aboutText.1'],
     type: ResumeItemType.STUDY,
-    selectedIndex: 5
+    selectedIndex: 6
   }
 ] 
