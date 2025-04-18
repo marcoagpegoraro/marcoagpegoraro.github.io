@@ -2,6 +2,22 @@ import Project from "./types/Project";
 
 export const projects: Project[] = [
   {
+    id: 'hugoblog',
+    name: "projects.hugoblog.name",
+    date: "projects.hugoblog.date",
+    description: "projects.hugoblog.description",
+    imageUrl: "https://avatars.githubusercontent.com/u/29385237?s=200&v=4",
+    link: "https://pegoraro.dev/posts/i-migrated-my-blog-from-go-to-hugo-heres-why/",
+  },
+  {
+    id: 'golangblog',
+    name: "projects.golangblog.name",
+    date: "projects.golangblog.date",
+    description: "projects.golangblog.description",
+    imageUrl: "https://pegoraro.dev/images/2365d858-d162-4736-89d4-6d2e7eeab154.jpg",
+    link: "https://pegoraro.dev/posts/como-aprendi-a-linguagem-de-programa%C3%A7%C3%A3o-go-e-utilizei-a-mesma-para-programar-meu-blog-pessoal-15",
+  },
+  {
     id: 'awssolutionsarchitect',
     name: "projects.awssolutionsarchitect.name",
     date: "projects.awssolutionsarchitect.date",
@@ -16,6 +32,14 @@ export const projects: Project[] = [
     description: "projects.awscloudpractitioner.description",
     imageUrl: "https://images.credly.com/size/680x680/images/00634f82-b07f-4bbd-a6bb-53de397fc3a6/image.png",
     link: "https://www.credly.com/badges/746cd78e-5847-45dd-b138-198486fc0f5f",
+  },
+  {
+    id: 'portfolioarticle',
+    name: "projects.portfolioarticle.name",
+    date: "projects.portfolioarticle.date",
+    description: "projects.portfolioarticle.description",
+    imageUrl: "https://pegoraro.dev/images/1aIBlqgTuJH5IhAd5rWAe_A.png",
+    link: "https://pegoraro.dev/posts/como-eu-fiz-meu-site-pessoal-utilizando-react-3/",
   },
   {
     id: 'gorlami',

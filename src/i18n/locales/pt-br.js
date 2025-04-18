@@ -113,6 +113,21 @@ export default {
     },
     projects: {
       title: "Alguns projetos que criei ou participei",
+      hugoblog: {
+        name: "Artigo sobre meu Blog feito com Hugo",
+        description: `Motivadores para utilizar e como foi feito a migração`,
+        date: "28/04/2024"
+      },
+      golangblog: {
+        name: "Artigo sobre meu antigo Blog feito usando Go",
+        description: `Como eu construi o blog usando Go e o framework Fiber`,
+        date: "27/10/2023"
+      },
+      portfolioarticle: {
+        name: "Artigo sobre como fiz esse site portfólio",
+        description: `Tecnologias utilizadas e mais`,
+        date: "30/07/2023"
+      },
       awssolutionsarchitect: {
         name: "AWS Solutions Architect",
         description: `Certificado`,
