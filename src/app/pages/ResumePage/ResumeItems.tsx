@@ -1,6 +1,6 @@
 import React from "react";
 import ResumeItem, { ResumeItemType } from "./types/Resume";
-import { AccountBalance, Computer, School, SchoolOutlined, StorefrontOutlined, TipsAndUpdates } from '@mui/icons-material';
+import { AccountBalance, Computer, School, SchoolOutlined, SchoolTwoToneIcon, StorefrontOutlined, TipsAndUpdates } from '@mui/icons-material';
 import TechChip from "../../components/TechChip";
 
 export const resumeItemList: ResumeItem[] = [
@@ -74,7 +74,7 @@ export const resumeItemList: ResumeItem[] = [
   },
   {
     name: "resume.resumeItems.fiap.name",
-    icon: <SchoolOutlined />,
+    icon: <SchoolTwoToneIcon />,
     imageUrl: './resume-page/fiap.jpg',
     date: 'resume.resumeItems.fiap.date',
     aboutText: ['resume.resumeItems.fiap.aboutText.1'],
