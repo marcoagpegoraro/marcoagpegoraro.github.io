@@ -115,7 +115,7 @@ export default {
       title: "Alguns projetos que criei ou participei",
       v: {
         name: "Projeto em VLang",
-        description: `Vídeo explicando meu projeto feito na linguagem V para a competição \"Rinha de Backend\"`,
+        description: `Vídeo explicando meu projeto feito na linguagem V para a competição amistosa \"Rinha de Backend\"`,
         date: "14/02/2024"
       },
       hugoblog: {
