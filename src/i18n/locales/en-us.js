@@ -24,13 +24,13 @@ export default {
           date: 'June 2021 - Current',
           aboutText: {
             "1": `
-              I joined Itaú as a software engineer responsible for developing solutions for data integration between times using Java with EMR and Kafka, all using the AWS cloud environment.`
+              I joined Itaú as a software engineer responsible for developing solutions for data integration between teams using Java with EMR and Kafka, all using the AWS cloud environment.`
             ,"2":`
-              I was then assigned to the team responsible for recording credit operations, where I still work today. There, I maintain existing systems and also work on creating new systems and flows.
+              I was then assigned to the team responsible for registering credit operations, where I still work today. My day to day routine is to maintain existing systems and also work on creating new systems and flows.
             `,"3": `
               My stack is currently focused on Java version 11, in addition to Kotlin for some applications. The database used is DynamoDB. I also work on creating lambdas made in Python and JavaScript. Communication between microservices is done synchronously with HTTP and asynchronously with AWS SNS, AWS SQS and Kafka. The latter uses Schema Registry and Apache Avro to define contracts.
             `,"4": `
-              I was also responsible for implementing Datamesh in the team, using DynamoDB Streams, along with Lambda for parquet conversion and glue catalog for data visualization in AWS Athena.
+              I was also responsible for implementing Datamesh in the team, using DynamoDB Streams, along with Lambda for parquet conversion and AWS Glue Catalog for data visualization in AWS Athena.
             `
           }
         },
