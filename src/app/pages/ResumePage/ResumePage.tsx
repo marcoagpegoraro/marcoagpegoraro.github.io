@@ -22,6 +22,7 @@ import { TextField } from '@mui/material';
 import { useTranslation } from 'react-i18next'
 import { useInView } from 'react-intersection-observer';
 import { CalendarMonth } from '@mui/icons-material';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 export const ResumePage = () => {
   const fireworksRef = useRef<FireworksHandlers>(null)
@@ -132,7 +133,13 @@ export const ResumePage = () => {
           <Box className='content' sx={{ bgcolor: 'background.paper' }}>
             {resumeItemList.filter(resumeItem => resumeItem.selectedIndex === selectedIndex).map(resumeItem =>
               <section className='inner-content' key={resumeItem.selectedIndex} >
-                <img className='resume-logo' src={resumeItem.imageUrl} />
+                <LazyLoadImage
+                  className='resume-logo'
+                  alt={resumeItem.name}
+                  height={100}
+                  src={resumeItem.imageUrl} 
+                  // width={100}
+                   />
                 {resumeItem.chips ? <><br /><br /></> : ''}
                 {resumeItem.chips?.map((chip, index) => <span key={index}>{chip}</span>)}
                 <br /><br />
