@@ -23,12 +23,15 @@ export default {
           name: "Itaú Unibank",
           date: 'June 2021 - Current',
           aboutText: {
-            "1": `I joined Itaú as a Java 11 developer focused on projects
-              using AWS Cloud services such as S3 and EMR. Then I was directed to
-              another team that uses projects with Java and AWS Lambdas programmed in JavaScript and Python.
-              I also needed to perform SNS and SQS messaging, DynamoDB access and migration
-            Java applications to Kotlin.
-              `
+            "1": `
+              I joined Itaú as a software engineer responsible for developing solutions for data integration between times using Java with EMR and Kafka, all using the AWS cloud environment.`
+            ,"2":`
+              I was then assigned to the team responsible for recording credit operations, where I still work today. There, I maintain existing systems and also work on creating new systems and flows.
+            `,"3": `
+              My stack is currently focused on Java version 11, in addition to Kotlin for some applications. The database used is DynamoDB. I also work on creating lambdas made in Python and JavaScript. Communication between microservices is done synchronously with HTTP and asynchronously with AWS SNS, AWS SQS and Kafka. The latter uses Schema Registry and Apache Avro to define contracts.
+            `,"4": `
+              I was also responsible for implementing Datamesh in the team, using DynamoDB Streams, along with Lambda for parquet conversion and glue catalog for data visualization in AWS Athena.
+            `
           }
         },
         b2w: {

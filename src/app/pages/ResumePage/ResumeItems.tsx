@@ -23,7 +23,12 @@ export const resumeItemList: ResumeItem[] = [
       <TechChip label="Kotlin" imageUrl="./resume-page/tech-logos/kotlin.png"/>,
       <TechChip label="Terraform" imageUrl="./resume-page/tech-logos/terraform.png"/>,
     ],
-    aboutText: ['resume.resumeItems.itau.aboutText.1'],
+    aboutText: [
+      'resume.resumeItems.itau.aboutText.1',
+      'resume.resumeItems.itau.aboutText.2',
+      'resume.resumeItems.itau.aboutText.3',
+      'resume.resumeItems.itau.aboutText.4'
+    ],
     type: ResumeItemType.WORK,
     selectedIndex: 0
   },

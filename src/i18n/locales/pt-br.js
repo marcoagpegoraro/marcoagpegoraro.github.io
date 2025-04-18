@@ -23,11 +23,14 @@ export default {
           name: "Itaú Unibanco",
           date: 'Junho de 2021 - Atual',
           aboutText: {
-            "1": `Entrei no Itaú como desenvolvedor Java 11 focado bastante em projetos 
-            utilizando serviços da Cloud AWS, como S3, EMR. Em seguida fui direcionado a
-            um projeto que consistia em projetos com Java e AWS Lambdas programadas em JavaScript.
-            Também precisei realizar o envio de mensagens SNS e SQS, acesso ao DynamoDB e migração
-            de aplicações Java para Kotlin.
+            "1": `
+              Entrei no Itaú como um engenheiro de software responsável por desenvolver soluções para a integração de dados entre times utilizando Java com EMR e Kafka, tudo isso utilizando o ambiente cloud AWS.
+            `,"2": `
+              Depois fui designado ao time responsável por registros de operações de crédito, onde atuo até hoje, lá eu faço a manutenção de sistemas existentes e também atuo na criação de novos sistemas e fluxos.
+            `,"3": `
+              Minha stack atualmente é focada em Java na versão 11, além de Kotlin para algumas aplicações, o banco de dados utilizado é o DynamoDB. Também atuo na criação de lambdas feitas em Python e JavaScript, a comunicação entre os microsserviços é feita sincronamente com http e assincronamente com AWS SNS, AWS SQS e Kafka, esse ultimo utilizando Schema Registry e Apache Avro para definição de contratos.
+            `,"4": `
+              Também fui o responsável pela implantação do Datamesh no time. Utilizando DynamoDB Streams, junto com Lambda para conversão de parquet e glue catalog para visualização dos dados no AWS Athena. 
             `
           }
         },
