@@ -2,6 +2,14 @@ import Project from "./types/Project";
 
 export const projects: Project[] = [
   {
+    id: 'awssolutionsarchitect',
+    name: "projects.awssolutionsarchitect.name",
+    date: "projects.awssolutionsarchitect.date",
+    description: "projects.awssolutionsarchitect.description",
+    imageUrl: "https://images.credly.com/size/680x680/images/0e284c3f-5164-4b21-8660-0d84737941bc/image.png",
+    link: "https://www.credly.com/badges/fd13c98b-8cd1-4815-b7f8-bb314d64a9d0",
+  },
+  {
     id: 'awscloudpractitioner',
     name: "projects.awscloudpractitioner.name",
     date: "projects.awscloudpractitioner.date",

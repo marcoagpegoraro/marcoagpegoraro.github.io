@@ -113,6 +113,11 @@ export default {
     },
     projects: {
       title: "Some projects I created or participated in",
+      awssolutionsarchitect: {
+        name: "AWS Solutions Architect",
+        description: `Certificate`,
+        date: "28/08/2024"
+      },
       awscloudpractitioner: {
         name: "AWS Cloud Practitioner",
         description: `Certificate`,
