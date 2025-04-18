@@ -10,9 +10,6 @@ import FacebookIcon from '@mui/icons-material/Facebook';
 
 export const SocialNetworkButtons = () => {
   return <>
-    {/* <IconButton href="https://www.facebook.com/tete5423" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" sx={{ ml: 2 }} >
-      <FacebookIcon className='social-network-white-background' sx={{ color: "#3b5998", backgroundSize: '15px 17.3px' }}></FacebookIcon>
-    </IconButton> */}
     <IconButton href="https://www.linkedin.com/in/marco-antonio-goncalves/" target="_blank" rel="noopener noreferrer" size="large" aria-label="menu" >
       <LinkedInIcon className='social-network-white-background' sx={{ color: "#0e76a8" }}></LinkedInIcon>
     </IconButton>
