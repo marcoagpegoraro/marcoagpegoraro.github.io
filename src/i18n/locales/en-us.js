@@ -113,6 +113,11 @@ export default {
     },
     projects: {
       title: "Some projects I created or participated in",
+      v: {
+        name: "Project in Vlang",
+        description: `Video explaining my project made in V language for the \"Backend Fight\" competition`,
+        date: "14/02/2024"
+      },
       hugoblog: {
         name: "Article about my Blog made with Hugo",
         description: `Motivators for use it and how the migration was done`,

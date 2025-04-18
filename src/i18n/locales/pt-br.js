@@ -113,6 +113,11 @@ export default {
     },
     projects: {
       title: "Alguns projetos que criei ou participei",
+      v: {
+        name: "Projeto em Vlang",
+        description: `Vídeo explicando meu projeto feito na linguagem V para a competição \"Rinha de Backend\"`,
+        date: "14/02/2024"
+      },
       hugoblog: {
         name: "Artigo sobre meu Blog feito com Hugo",
         description: `Motivadores para utilizar e como foi feito a migração`,
