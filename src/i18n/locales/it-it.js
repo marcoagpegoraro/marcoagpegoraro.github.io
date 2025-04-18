@@ -114,7 +114,7 @@ export default {
     projects: {
       title: "Alcuni progetti che ho creato o a cui ho partecipato",
       v: {
-        name: "Progetto a Vlang",
+        name: "Progetto a VLang",
         description: `Video che spiega il mio progetto realizzato in linguaggio V per la competizione \"Backend Fight\"`,
         date: "14/02/2024"
       },
