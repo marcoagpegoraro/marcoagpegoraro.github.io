@@ -6,12 +6,20 @@ export default {
       message: "Mensagem"
     },
     presentation: {
-      title: `Desenvolvedor de software Fullstack | AWS | Java | JavaScript`
+      title: `Engenheiro de software | AWS | Java | JavaScript | Go`
     },
     aboutMe: {
-      message1: `Olá, seja bem vindo ao meu site pessoal 🙋‍♂️, meu nome é Marco, tenho %%ANOS%% anos, trabalho atualmente como desenvolvedor de software para o Itaú Unibanco, começei a aprender programação desde 2014 quando entrei no ensino médio e sempre estou procurando aprender novas tecnologias.`,
-      message2: `Hoje no trabalho, atuo principalmente na parte de modernização utilizando Java junto com as tecnologias de Kafka e mensageria, tenho conhecimento basico em Terraform e sou certificado AWS Cloud Practitioner, mas também tenho conhecimento com as linguagens C#, PHP, Dart com Flutter para criação de Apps Mobile e JavaScript, essa ultima na qual é a linguagem padrão que utilizo para a criação de projetos pessoais, junto com o framework Next.js`,
-      message3: `Meus principais hobbies são carros 🚗, musica 🎵, relogios ⌚ e tecnologias antigas, como computadores 💾 ou videogames 🎮 da decada de 90 e 00, acho fascinante pesquisar sobre a história das coisas e ver como elas evoluiram até se tornar o que é hoje. atuamente tenho um Honda Accord 1993 Wagon no qual eu e minha namorada somos muito apegados. Tenho ingles avançado e atualmente estou em processo de aprendizado da lingua italiana.`,
+      message1: `
+      Bem-vindo ao meu site de portfólio!
+    `, message2: `
+      Criei este site para oferecer uma experiência mais dinâmica e pessoal do que a oferecida pelo LinkedIn. Como você deve ter adivinhado, meu nome é Marco. Sou engenheiro de software com seis anos de experiência agregando valor às empresas em que trabalhei.      
+    `, message3: `
+      Ao longo dos anos, contribuí para projetos em diversos setores, incluindo e-commerce, bancos e logística, impactando a vida de milhares de pessoas por meio dos softwares que desenvolvi. Embora tenha sólida experiência em Java, também trabalhei com Kotlin, Python, JavaScript, Angular, React e C#. Além disso, tenho experiência prática com a AWS, comprovada pela minha certificação AWS Solutions Architect Associate.    
+    `,message4: `
+      I'm always eager to learn new technologies and find the best possible solutions to the challenges I face.
+    `,message5: `
+      Fora do trabalho, sou apaixonado por carros 🚗, música 🎵, relógios ⌚ e tecnologia vintage, como computadores 💾 e videogames 🎮 dos anos 90 e 2000. Adoro mergulhar na história de como essas tecnologias evoluíram para o que são hoje. Também gosto muito de viajar e conhecer novos lugares e culturas diferentes.  
+    `,
     },
     resume: {
       windowText: `Meu curriculo`,

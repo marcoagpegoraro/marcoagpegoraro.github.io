@@ -6,12 +6,20 @@ export default {
       message: "Messaggio"
     },
     presentation: {
-      title: `Sviluppatore software fullstack | AWS | Java | JavaScript`
+      title: `Sviluppatore software fullstack | AWS | Java | JavaScript | Go`
     },
     aboutMe: {
-      message1: `Ciao! E benvenuto nel mio sito personale 🙋‍♂️, mi chiamo Marco, ho %%ANOS%% anni e attualmente lavoro come sviluppatore software per Itaú Unibanca, la più grande banca dell'America Latina, ho iniziato a imparare a programmare dal 2014 quando Sono entrato al liceo e cerco sempre di imparare nuove tecnologie.`,
-      message2: `Oggi al lavoro, lavoro principalmente nella parte di modernizzazione utilizzando Java con Apache Kafka, AWS SQS e AWS SNS, ho conoscenze di base in Terraform e sono certificato AWS Cloud Practitioner, ma ho anche conoscenze con C#, PHP, Dart con Flutter per la creazione di app mobili e JavaScript, la strega è il linguaggio predefinito che utilizzo per creare progetti personali, insieme a Next.js o al framework React`,
-      message3: `I miei hobby principali sono le auto 🚗, la musica 🎵, gli orologi ⌚ e le vecchie tecnologie come i computer 💾 o i videogiochi 🎮 degli anni '90 e '00, trovo affascinante ricercare la storia delle cose e vedere come si sono evolute per diventare quello che sono oggi. Attualmente possiedo una Honda Accord Wagon del 1993 a cui io e la mia ragazza siamo molto legati. Ho un inglese avanzato e attualmente sto imparando l'italiano.`,
+      message1: `
+      Benvenuti nel mio sito web portfolio!
+    `, message2: `
+      Ho creato questo sito per offrire un'esperienza più dinamica e personale di quella offerta da LinkedIn. Come avrete intuito, mi chiamo Marco. Sono un ingegnere informatico con sei anni di esperienza nel creare valore per le aziende per cui ho lavorato.      
+    `, message3: `
+      Nel corso degli anni, ho contribuito a progetti in diversi settori, tra cui e-commerce, bancario e logistico, influenzando la vita di migliaia di persone attraverso il software che ho sviluppato. Oltre a una solida competenza in Java, ho lavorato anche con Kotlin, Python, JavaScript, Angular, React e C#. Inoltre, ho esperienza pratica con AWS, comprovata dalla mia certificazione AWS Solutions Architect Associate.      
+    `,message4: `
+      Sono sempre desideroso di apprendere nuove tecnologie e trovare le migliori soluzioni possibili alle sfide che mi si presentano.
+    `,message5: `
+      Fuori dal lavoro, sono appassionato di auto 🚗, musica 🎵, orologi ⌚ e tecnologia vintage come computer e videogiochi degli anni '90 e 2000 💾. Adoro immergermi nella storia di come queste tecnologie si sono evolute fino a diventare ciò che sono oggi.
+    `,
     },
     resume: {
       windowText: `Il mio curriculum`,

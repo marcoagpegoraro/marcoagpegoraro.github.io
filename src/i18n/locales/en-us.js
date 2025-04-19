@@ -6,12 +6,20 @@ export default {
       message: "Message"
     },
     presentation: {
-      title: `Fullstack Software Developer | AWS | Java | JavaScript`
+      title: `Software Engineer | AWS | Java | JavaScript | Go`
     },
     aboutMe: {
-      message1: `Hello! And welcome to my personal website 🙋‍♂️, my name is Marco, I am %%ANOS%% years old and i currently work as a software developer for Itaú Unibanco, the largest bank in Latin America, i started learning programming since 2014 when I entered high school and I'm always looking to learn new technologies.`,
-      message2: `Today at work, I work mainly in the modernization part using Java with Apache Kafka, AWS SQS and AWS SNS, I have basic knowledge in Terraform and i am  an AWS Cloud Practitioner certified, but i also have knowledge with C#, PHP, Dart with Flutter for creating Mobile Apps and JavaScript, witch is the default language that i use to create personal projects, along with Next.js or React framework`,
-      message3: `My main hobbies are cars 🚗, music 🎵, watches ⌚ and old technologies like computers 💾 or video games 🎮 from the 90s and 00s, I find it fascinating to research the history of things and see how they evolved to become what they are today. I currently own a 1993 Honda Accord Wagon that my girlfriend and i are very attached to. I have advanced English and I am currently in the process of learning italian.`,
+      message1: `
+        Welcome to my portfolio website!
+      `, message2: `
+        I created this site to offer a more dynamic and personal experience than what LinkedIn provides. As you might have guessed, my name is Marco. I'm a software engineer with six years of experience delivering value to the companies I've worked for.      
+      `, message3: `
+        Over the years, I've contributed to projects in various sectors, including e-commerce, banking, and logistics—impacting the lives of thousands through the software I’ve built. While I have solid expertise in Java, I’ve also worked with Kotlin, Python, JavaScript, Angular, React, and C#. In addition, I have hands-on experience with AWS, backed by my AWS Solutions Architect Associate certification.      
+      `,message4: `
+        I'm always eager to learn new technologies and find the best possible solutions to the challenges I face.
+      `,message5: `
+        Outside of work, I’m passionate about cars 🚗, music 🎵, watches ⌚, and vintage tech like 90s and 00s computers 💾 and video games 🎮. I love diving into the history of how these technologies evolved into what they are today.      
+      `,
     },
     resume: {
       windowText: `My resume`,
