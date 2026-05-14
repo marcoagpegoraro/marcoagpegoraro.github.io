@@ -1,9 +1,0 @@
-.contact-me-page {
-    display: flex;
-    align-items: center;
-    flex-direction: row;
-    align-content: baseline;
-    justify-content: space-around;
-    flex-wrap: wrap;
-    padding-top: 120px;
-}

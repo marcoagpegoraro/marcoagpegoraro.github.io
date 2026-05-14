@@ -1,27 +1,36 @@
-# My personal Website, created with React
-## You can access this website by typing in your address bar the following address: https://pegoraro.dev
+This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
-Fell free to clone this repository and see how i programmed the website.
+## Getting Started
 
-This site was programmed using the most modern web development technologies, like [ReactJS](https://react.dev) and [Typescript](https://www.typescriptlang.org/) together with recommended componentization practices, internationalization with the [i18n](https://www.i18next.com/) library, animations with CSS and [intersection observer](https://developer.mozilla.org/en-US/docs/Web/API/Intersection_Observer_API), in addition to the [Material UI](https://mui.com/) component library.
+First, run the development server:
 
-Made with ❤️ by myself, hosted on [GitHub Pages]([https://](https://pages.github.com/)) and domain registered at [registro.br](https://registro.br/) . 
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+# or
+bun dev
+```
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You will need NPM to run this website in your local machine, clone this project, then run `npm install`, an then you can run one of the following commands:
+You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
-## Available Scripts
-### `npm start`
-Runs the app in the development mode.
+This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-### `npm run build`
-Builds the app for production to the `build` folder.\
+## Learn More
 
-### `npm run eject`
-This command will remove the single build dependency from the project and then copy all the config files (webpack, Babel, ESLint, etc) right into the project so you have full control over them.
+To learn more about Next.js, take a look at the following resources:
 
-##
-### Deployment
-To deploy in production, run the command `npm run deploy`, actualy, only i can use this command, this command will build React in production and automatically place the code in the master branch, which will be used by Github Pages.
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+
+## Deploy on Vercel
+
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
